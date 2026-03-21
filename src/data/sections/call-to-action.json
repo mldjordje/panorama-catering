@@ -1,0 +1,16 @@
+{
+  "title": "Kontaktirajte nas",
+  "subtitle": "Pozovite ili posaljite poruku i dogovorite sve detalje.",
+  "image": {
+    "url": "/img/7.jpg",
+    "alt": "Kontakt Madera"
+  },
+  "link1": {
+    "url": "/contact",
+    "title": "Kontakt"
+  },
+  "link2": {
+    "url": "/gallery",
+    "title": "Galerija"
+  }
+}

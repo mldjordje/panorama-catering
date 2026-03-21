@@ -1,0 +1,12 @@
+.next
+node_modules
+.env
+.env.local
+.env.*.local
+.vercel
+.DS_Store
+*.log
+npm-debug.log*
+yarn-error.log*
+# Ignore template source folder
+the8project.com/

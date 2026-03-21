@@ -1,0 +1,9 @@
+{
+  "title": "Izdvojena <span>jela</span>",
+  "description": "Najtraženiji specijaliteti koje preporučujemo našim gostima.",
+  "button": {
+    "link": "/menu",
+    "icon": "/img/ui/icons/menu.svg",
+    "label": "Ceo meni"
+  }
+}

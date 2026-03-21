@@ -1,0 +1,18 @@
+{
+    "title": "Kontakt i rezervacije.",
+    "description": "Pozovite nas ili posaljite poruku za informacije.",
+    "button1": {
+        "label": "Kontakt",
+        "icon": "/img/ui/icons/dialog.svg",
+        "link": "/contact"
+    },
+    "button2": {
+        "label": "Galerija",
+        "icon": "/img/ui/icons/arrow.svg",
+        "link": "/gallery"
+    },
+    "image": {
+        "url": "/img/illustrations/delivery.png",
+        "alt": "kontakt"
+    }
+}

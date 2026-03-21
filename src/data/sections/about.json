@@ -1,0 +1,28 @@
+{
+  "image": {
+    "url": "/img/1.jpg",
+    "alt": "Restoran Madera"
+  },
+  "number": {
+    "value": "198",
+    "label": "Sedeća mesta"
+  },
+  "title": "O nama — tradicija ukusa",
+  "items": [
+    {
+      "num": "01",
+      "title": "U srcu grada",
+      "text": "Mirna terasa uz park, idealna za porodične i poslovne susrete."
+    },
+    {
+      "num": "02",
+      "title": "Sveže namirnice",
+      "text": "Biramo lokalne sastojke i pripremamo po proverenom receptu kuće."
+    },
+    {
+      "num": "03",
+      "title": "Događaji",
+      "text": "Rođendani, krštenja, poslovni skupovi — uz potpunu organizaciju."
+    }
+  ]
+}

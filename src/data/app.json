@@ -1,0 +1,44 @@
+{
+  "settings": {
+    "siteName": "Panorama Catering",
+    "siteDescription": "Panorama Catering - massgeschneiderte Konzepte fuer Betriebsrestaurants, Schulen, Kitas und Events.",
+    "formspreeURL": "https://formspree.io/f/your_api_key",
+    "mapbox": {
+      "AccessToken": "*",
+      "style": "mapbox://styles/mapbox/dark-v11",
+      "zoom": 15,
+      "long": 9.684,
+      "lat": 49.281
+    },
+    "perPage": 6
+  },
+  "header": {
+    "logo": {
+      "image": "/panorama/logo-panorama-catering.png",
+      "alt": "Panorama Catering logo"
+    },
+    "menu": [
+      { "label": "Leistungen", "link": "/#leistungen", "children": [] },
+      { "label": "Philosophie", "link": "/#philosophie", "children": [] },
+      { "label": "Branchen", "link": "/#branchen", "children": [] },
+      { "label": "Galerie", "link": "/#panorama-galerie", "children": [] },
+      { "label": "Kontakt", "link": "/#kontakt", "children": [] }
+    ]
+  },
+  "footer": {
+    "copy": "(c) 2026 Panorama Hotel- und Service GmbH. Alle Rechte vorbehalten."
+  },
+  "social": [
+    { "link": "https://www.instagram.com/panoramacatering/", "title": "Instagram", "icon": "fab fa-instagram" },
+    { "link": "https://www.facebook.com/panoramacatering.de", "title": "Facebook", "icon": "fab fa-facebook-f" },
+    { "link": "https://www.panorama4event.de/", "title": "Event Website", "icon": "fas fa-globe" }
+  ],
+  "instagram": [
+    { "image": "/panorama/pc-home-01.jpg", "title": "Panorama Bild 1", "link": "https://www.instagram.com/panoramacatering/" },
+    { "image": "/panorama/betriebsrestaurant.jpg", "title": "Panorama Bild 2", "link": "https://www.instagram.com/panoramacatering/" },
+    { "image": "/panorama/pc-philo-01.jpg", "title": "Panorama Bild 3", "link": "https://www.instagram.com/panoramacatering/" },
+    { "image": "/panorama/pc-philo-03.jpg", "title": "Panorama Bild 4", "link": "https://www.instagram.com/panoramacatering/" },
+    { "image": "/panorama/pc-sk-dge-02.jpg", "title": "Panorama Bild 5", "link": "https://www.instagram.com/panoramacatering/" },
+    { "image": "/panorama/wuerth-open-air-26-aushilfe.jpg", "title": "Panorama Bild 6", "link": "https://www.instagram.com/panoramacatering/" }
+  ]
+}
