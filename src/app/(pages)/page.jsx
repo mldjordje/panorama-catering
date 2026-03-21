@@ -6,77 +6,77 @@ import ImmersiveGallery from "@/components/ImmersiveGallery";
 const panoramaHomeShowcase = {
   sectionId: "panorama-galerie",
   eyebrow: "Panorama Einblicke",
-  title: "Mehr Bildmaterial fuer Vertrieb und Erstgespraeche",
+  title: "Bildmaterial für Beratung, Angebot und Erstgespräch",
   description:
-    "Die Galerie kombiniert Motive aus Betrieb, Bildung und Event, damit Interessenten den Leistungsumfang sofort erfassen.",
+    "Die Galerie verbindet Motive aus Betriebsrestaurant, Schulverpflegung und Eventservice, damit Leistungsumfang und Qualitätsanspruch auf einen Blick sichtbar werden.",
   highlights: [
     {
       kicker: "Betrieb",
       title: "Betriebsrestaurant",
-      text: "Loesungen fuer Mitarbeitende, Gaeste und Tagesbetrieb.",
+      text: "Kundenspezifische Lösungen für Unternehmen aller Größen.",
     },
     {
       kicker: "Bildung",
       title: "Schule + Kita",
-      text: "Zielgruppengerechte Verpflegung fuer Kinder und Jugendliche.",
+      text: "Gesunde Verpflegung für Kinder und Jugendliche mit alltagstauglichen Abläufen.",
     },
     {
       kicker: "Event",
-      title: "Messen und Veranstaltungen",
-      text: "Flexible Catering-Setups fuer unterschiedliche Formate.",
+      title: "Events, Messen u. Sport",
+      text: "Maßgeschneiderte Konzepte für Veranstaltungen in allen Größenordnungen.",
     },
   ],
-  ctaPrimary: { label: "Projektgespraech starten", href: "/#kontakt" },
+  ctaPrimary: { label: "Beratung anfragen", href: "/kontakt" },
   ctaSecondary: { label: "Event-Website ansehen", href: "https://www.panorama4event.de/" },
   items: [
     {
       src: "/panorama/pc-home-01.jpg",
       title: "Panorama Catering",
-      text: "Unternehmensansicht als Einstieg in den Leistungsumfang.",
+      text: "Ein erster Eindruck von Unternehmen, Anspruch und Leistungsbreite.",
       category: "Unternehmen",
       layout: "wide",
     },
     {
       src: "/panorama/betriebsrestaurant.jpg",
       title: "Betriebsrestaurant",
-      text: "Verpflegung fuer Unternehmen im laufenden Betrieb.",
+      text: "Verpflegungslösungen für den laufenden Betrieb und den täglichen Bedarf.",
       category: "Betrieb",
     },
     {
       src: "/panorama/pc-philo-01.jpg",
       title: "Philosophie",
-      text: "Qualitaet, Teamgeist und Kundennutzen im Mittelpunkt.",
+      text: "Qualität, Verlässlichkeit und partnerschaftliche Zusammenarbeit im Mittelpunkt.",
       category: "Unternehmen",
     },
     {
       src: "/panorama/pc-philo-03.jpg",
       title: "Service Team",
-      text: "Praxisnahe Umsetzung und verlassliche Ablaeufe.",
+      text: "Praxisnahe Umsetzung und verlässliche Abläufe vor Ort.",
       category: "Betrieb",
     },
     {
       src: "/panorama/pc-sk-dge-02.jpg",
       title: "Schul- und Kitaverpflegung",
-      text: "Alltagstaugliche Konzepte fuer Traeger und Einrichtungen.",
+      text: "Gesunde und zielgruppengerechte Konzepte für Träger und Einrichtungen.",
       category: "Bildung",
       layout: "tall",
     },
     {
       src: "/panorama/wuerth-open-air-26-aushilfe.jpg",
       title: "Event Catering",
-      text: "Unterstuetzung grosser Veranstaltungsformate.",
+      text: "Flexible Unterstützung für Business-Events, Messen und Sportveranstaltungen.",
       category: "Event",
     },
     {
       src: "/panorama/woa25-job-banner.png",
       title: "Event Recruiting",
-      text: "Teamaufbau fuer saisonale Grossveranstaltungen.",
+      text: "Operative Verstärkung für saisonale und großformatige Einsätze.",
       category: "Event",
     },
     {
       src: "/panorama/woa25-job-banner-large.png",
       title: "Saisonkampagne",
-      text: "Kommunikation und Einsatzplanung fuer Event-Teams.",
+      text: "Kommunikation und Einsatzplanung für größere Event-Teams.",
       category: "Karriere",
       layout: "wide",
     },
@@ -115,20 +115,22 @@ export default function HomePage() {
           <div className="titlos-element">
             <p className="panorama-eyebrow" data-aos="fade-up">Panorama Catering</p>
             <h1 data-aos="fade-up" data-aos-delay="120">
-              Catering fuer Betrieb, <em>Bildung</em> und Event
+              Maßgeschneiderte Catering-Konzepte für <em>Betrieb</em>, Bildung und Veranstaltungen
             </h1>
             <p className="panorama-hero-subtitle" data-aos="fade-up" data-aos-delay="220">
-              Zwei Video-Shorts laufen als durchgaengiger Hintergrund und zeigen die Dynamik der
-              Marke direkt im ersten Viewport.
+              Bei uns ist Catering mehr als nur die professionelle Belieferung mit schmackhafter
+              und frischer Verpflegung. Wir entwickeln kundenspezifische Lösungen für
+              Betriebsrestaurants, Kantinen, Schulen, Kindergärten sowie Firmenveranstaltungen und
+              Privatfeiern.
             </p>
             <div className="panorama-hero-actions" data-aos="fade-up" data-aos-delay="280">
-              <a href="/#leistungen" className="button white">Leistungen ansehen</a>
-              <a href="/booking" className="button white">Booking Demo</a>
+              <a href="/#leistungen" className="button white">Leistungsfelder entdecken</a>
+              <a href="/kontakt" className="button white">Beratung anfragen</a>
             </div>
           </div>
 
           <div className="small-title">
-            <p>Hotline: +49 79 40 - 930 78 20 | Kuenzelsau, Deutschland</p>
+            <p>Hotline: +49 79 40 - 930 78 20 | Künzelsau, Deutschland</p>
           </div>
         </section>
 
@@ -136,19 +138,19 @@ export default function HomePage() {
           <div className="pagewrap">
             <div className="panorama-intro-copy">
               <div className="section-title" data-aos="fade-up">
-                <p>LEISTUNGEN</p>
+                <p>LEISTUNGSFELDER</p>
               </div>
               <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="100">
                 <h2>Herzlich willkommen bei Panorama Catering</h2>
               </div>
               <p data-aos="fade-up" data-aos-delay="180">
-                Wir entwickeln massgeschneiderte Konzepte fuer Betriebsrestaurants, Kantinen,
-                Schulen, Kitas sowie Firmenveranstaltungen und Privatfeiern in unterschiedlichen
-                Groessenordnungen.
+                Wir entwickeln maßgeschneiderte Konzepte und bieten kundenspezifische Lösungen für
+                Betriebsrestaurants, Kantinen, Schulen, Kindergärten sowie Firmenveranstaltungen
+                und Privatfeiern in allen Größenordnungen.
               </p>
               <p data-aos="fade-up" data-aos-delay="240">
-                Neben frischer Verpflegung stehen bei uns klare Prozesse, kundennahe Betreuung
-                und konsequente Qualitaetsstandards im Mittelpunkt.
+                Und das machen wir bei Panorama Catering mit ganzem Herzen und höchsten
+                Qualitätsmaßstäben.
               </p>
             </div>
 
@@ -170,10 +172,10 @@ export default function HomePage() {
           <div className="pagewrap">
             <div className="panorama-facts-grid">
               {[
-                { value: "B2B", label: "Betriebsrestaurants", text: "Konzepte fuer Unternehmen jeder Groesse." },
-                { value: "KITA", label: "Schule + Kita", text: "Verpflegung fuer Kinder und Jugendliche." },
-                { value: "EVENT", label: "Konferenz + Messe", text: "Flexible Betreuung fuer Veranstaltungen." },
-                { value: "DE + CH", label: "Regionen", text: "Aktiv in Deutschland und der Schweiz." },
+                { value: "BETRIEB", label: "Betriebsrestaurants", text: "Konzepte für Unternehmen jeder Größe und jeden Tagesablauf." },
+                { value: "BILDUNG", label: "Schule + Kita", text: "Gesunde Verpflegung für Kinder und Jugendliche." },
+                { value: "QUALITÄT", label: "Erzeuger & Händler", text: "Qualitätsprodukte von regionalen und überregionalen Partnern." },
+                { value: "DE + CH", label: "Regionen", text: "Aktiv in Deutschland und in der Schweiz." },
               ].map((fact, idx) => (
                 <article className="panorama-fact-card" key={`fact-${idx}`} data-aos="fade-up" data-aos-delay={100 + idx * 90}>
                   <p className="panorama-fact-value">{fact.value}</p>
@@ -210,15 +212,17 @@ export default function HomePage() {
                   <p>PHILOSOPHIE</p>
                 </div>
                 <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="120">
-                  <h2>Qualitaetsprodukte, Kundenorientierung und Teamgeist</h2>
+                  <h2>Qualität, Verlässlichkeit und partnerschaftliche Lösungen</h2>
                 </div>
                 <p data-aos="fade-up" data-aos-delay="180">
-                  Kompetenz, Verlaesslichkeit und Vertrauen sind die Grundlage unserer Partnerschaften.
-                  Wir richten jedes Konzept nach den spezifischen Anforderungen von Kunden und Zielgruppen aus.
+                  Kompetenz, Verlässlichkeit und Vertrauen sind die Grundlage unserer Partnerschaften.
+                  Wir richten jedes Konzept an den spezifischen Anforderungen von Kunden, Zielgruppen
+                  und Einsatzbereichen aus.
                 </p>
                 <p data-aos="fade-up" data-aos-delay="240">
                   Unser Ziel ist, mehr zu bieten als erwartet: mit professioneller Organisation,
-                  ressourcenschonender Arbeitsweise und verbindlichen Qualitaetsstandards.
+                  klaren Prozessen, ressourcenschonender Arbeitsweise und verbindlichen
+                  Qualitätsstandards.
                 </p>
               </div>
 
@@ -237,27 +241,37 @@ export default function HomePage() {
         <section id="branchen" className="panorama-branch-section">
           <div className="pagewrap">
             <div className="section-title" data-aos="fade-up">
-              <p>BRANCHEN</p>
+              <p>EINSATZFELDER</p>
             </div>
             <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="100">
-              <h2>Einsatzfelder von Panorama Catering</h2>
+              <h2>Leistungsfelder von Panorama Catering</h2>
             </div>
 
             <div className="panorama-branch-grid">
               {[
                 {
-                  title: "Betriebsrestaurants und Kantinen",
-                  text: "Versorgung fuer Mitarbeitende, Gaeste und Besucher mit klaren Tagesablaeufen.",
+                  title: "Panorama Catering",
+                  text: "Maßgeschneiderte Konzepte und kundenspezifische Lösungen für Betriebsrestaurants, Kantinen, Schulen, Kindergärten sowie Firmenveranstaltungen und Privatfeiern.",
+                  img: "/panorama/pc-home-01.jpg",
+                },
+                {
+                  title: "Betriebsrestaurant",
+                  text: "Wir bieten Catering-Konzepte, die auf spezielle Wünsche und Bedürfnisse von Unternehmen aller Größen zugeschnitten sind.",
                   img: "/panorama/betriebsrestaurant.jpg",
                 },
                 {
-                  title: "Schule und Kita",
-                  text: "Alltagstaugliche Verpflegungskonzepte fuer Bildungseinrichtungen und Traeger.",
+                  title: "Schulverpflegung",
+                  text: "Gesunde Verpflegung für Schulen, Kindergärten und Kitas. Gesundes Essen für Kinder und Jugendliche kann sehr lecker sein und sogar Spaß machen.",
                   img: "/panorama/pc-sk-dge-02.jpg",
                 },
                 {
-                  title: "Konferenz und Eventservice",
-                  text: "Skalierbare Loesungen fuer Business-Events, Messen und Sportveranstaltungen.",
+                  title: "Qualität",
+                  text: "Qualitätsprodukte von regionalen und überregionalen Erzeugern und Händlern. Gutes Essen ist ein Stück Lebensqualität.",
+                  img: "/panorama/pc-philo-03.jpg",
+                },
+                {
+                  title: "Events, Messen u. Sport",
+                  text: "Maßgeschneiderte Konzepte und kundenspezifische Lösungen für Veranstaltungen in allen Größenordnungen.",
                   img: "/panorama/wuerth-open-air-26-aushilfe.jpg",
                 },
               ].map((item, idx) => (
@@ -281,14 +295,14 @@ export default function HomePage() {
               <p>ABLAUF</p>
             </div>
             <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="100">
-              <h2>So startet die Zusammenarbeit</h2>
+              <h2>So entsteht ein passendes Konzept</h2>
             </div>
             <div className="panorama-process-grid">
               {[
-                { step: "01", title: "Erstgespraech", text: "Ziele, Einsatzbereich und Rahmenbedingungen definieren." },
-                { step: "02", title: "Angebot", text: "Passende Leistungsbausteine mit klarem Kostenrahmen." },
-                { step: "03", title: "Feinplanung", text: "Ablauf, Verantwortlichkeiten und Schnittstellen abstimmen." },
-                { step: "04", title: "Umsetzung", text: "Operativer Start mit direktem Ansprechpartner vor Ort." },
+                { step: "01", title: "Erstgespräch", text: "Ziele, Einsatzbereich, Personenzahl und Rahmenbedingungen klären." },
+                { step: "02", title: "Bedarfserfassung", text: "Anforderungen, Abläufe und gewünschte Servicebausteine aufnehmen." },
+                { step: "03", title: "Individuelles Angebot", text: "Passende Leistungsbausteine mit nachvollziehbarem Kostenrahmen vorstellen." },
+                { step: "04", title: "Umsetzung", text: "Operativer Start mit klaren Ansprechpartnern und verlässlichen Prozessen." },
               ].map((item, idx) => (
                 <article className="panorama-process-card" key={`process-${idx}`} data-aos="flip-up" data-aos-delay={120 + idx * 90}>
                   <span>{item.step}</span>
@@ -305,18 +319,19 @@ export default function HomePage() {
             <div className="panorama-booking-teaser-grid">
               <div className="panorama-booking-teaser-copy" data-aos="fade-right">
                 <div className="section-title">
-                  <p>BOOKING FLOW</p>
+                  <p>ANFRAGE</p>
                 </div>
                 <div className="section-bigtitle">
-                  <h2>B2B zuerst, Privatkunde direkt mitgedacht</h2>
+                  <h2>Strukturierter Einstieg in das Beratungsgespräch</h2>
                 </div>
                 <p>
-                  Der neue Booking-Demo fuehrt durch Personenanzahl, Paket, Serviceart, Termin und
-                  Kontaktdaten. Jede Anfrage startet mit Status pending.
+                  Für die Präsentation steht ein strukturiertes Anfrageformular bereit. Es erfasst
+                  Personenzahl, Leistungsbereich, Serviceart, Termin und Kontaktdaten übersichtlich
+                  und unterstützt so eine saubere Vorqualifizierung.
                 </p>
                 <div className="panorama-hero-actions">
-                  <a href="/booking" className="button white">Zum Booking</a>
-                  <a href="/admin" className="button white">Admin Demo</a>
+                  <a href="/booking" className="button white">Anfrage öffnen</a>
+                  <a href="/kontakt" className="button white">Kontaktseite</a>
                 </div>
               </div>
 
@@ -342,16 +357,17 @@ export default function HomePage() {
             <div className="panorama-proof-grid">
               <div className="panorama-proof-copy" data-aos="fade-right">
                 <div className="section-title">
-                  <p>VERTRIEBS DEMO</p>
+                  <p>PRÄSENTATION</p>
                 </div>
                 <div className="section-bigtitle">
-                  <h2>Mobile optimierte Storyline fuer Praesentationen</h2>
+                  <h2>Klar aufgebaut für Vertrieb und Vor-Ort-Termine</h2>
                 </div>
                 <p>
-                  Jede Sektion ist fuer kleine Screens priorisiert, mit klaren CTAs,
-                  kurzen Texten, mehr Bildmaterial und sichtbaren Bewegungsimpulsen.
+                  Die Seite führt von Leistungsfeldern über Bildmaterial bis zur Kontaktaufnahme
+                  und schafft damit eine professionelle Struktur für Angebotsgespräche auf Desktop
+                  und Mobilgeräten.
                 </p>
-                <a href="/booking" className="button">Booking testen</a>
+                <a href="/kontakt" className="button">Kontakt aufnehmen</a>
               </div>
 
               <div className="panorama-proof-images">
@@ -383,16 +399,16 @@ export default function HomePage() {
               <div className="faq-container">
                 {[
                   {
-                    title: "FUER WELCHE BEREICHE BIETEN SIE CATERING AN?",
-                    text: "Wir betreuen Betriebsrestaurants, Kantinen, Schulen, Kitas sowie Konferenz- und Eventformate.",
-                  },
-                  {
-                    title: "WIE SCHNELL ERHALTEN WIR EIN ANGEBOT?",
-                    text: "Nach dem Erstgespraech erstellen wir kurzfristig ein abgestimmtes Angebot fuer Ihren Bedarf.",
+                    title: "WELCHE LEISTUNGSBEREICHE DECKT PANORAMA CATERING AB?",
+                    text: "Wir entwickeln Lösungen für Betriebsrestaurants, Kantinen, Schulen, Kindergärten, Firmenveranstaltungen, Privatfeiern sowie Event- und Konferenzformate.",
                   },
                   {
                     title: "IN WELCHEN REGIONEN SIND SIE AKTIV?",
-                    text: "Deutschland: Hohenlohe, Unterland, Raum Ludwigsburg/Stuttgart, Markgraeflerland, Berlin, Main-Tauber-Kreis. Schweiz: Bodensee, St. Gallen.",
+                    text: "Deutschland: Hohenlohe, Unterland, Raum Ludwigsburg und Stuttgart, Markgräferland, Berlin, Main-Tauber-Kreis. Schweiz: Bodensee, St. Gallen.",
+                  },
+                  {
+                    title: "WAS ZEICHNET IHRE ARBEITSWEISE AUS?",
+                    text: "Maßgeschneiderte Konzepte, kundenspezifische Lösungen, hohe Qualitätsmaßstäbe und eine verlässliche, partnerschaftliche Betreuung vom Erstgespräch bis zur Umsetzung.",
                   },
                 ].map((item, idx) => (
                   <div className="faq" key={`faq-${idx}`} data-aos="fade-up" data-aos-delay={100 + idx * 80}>
@@ -419,11 +435,11 @@ export default function HomePage() {
           <div className="pagewrap">
             <div className="panorama-contact-card" data-aos="fade-up">
               <div className="panorama-contact-copy">
-                <h3>Bereit fuer ein konkretes Angebot?</h3>
-                <p>Rufen Sie uns an oder wechseln Sie zur Kontaktseite fuer die strukturierte Anfrage.</p>
+                <h3>Bereit für ein konkretes Gespräch?</h3>
+                <p>Rufen Sie uns an oder senden Sie uns Ihre Eckdaten. Wir entwickeln gern einen passenden Vorschlag für Ihren Bedarf.</p>
               </div>
               <div className="panorama-contact-actions">
-                <a href="/booking" className="button white">Booking starten</a>
+                <a href="/booking" className="button white">Anfrageformular</a>
                 <a href="tel:+4979409307820" className="button white">+49 79 40 - 930 78 20</a>
                 <a href="/kontakt" className="button white">Zur Kontaktseite</a>
               </div>

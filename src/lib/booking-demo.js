@@ -5,8 +5,8 @@ export const BOOKING_STORAGE_KEY = STORAGE_KEY;
 export const BOOKING_OVERRIDES_STORAGE_KEY = OVERRIDES_STORAGE_KEY;
 
 export const BOOKING_STATUS_OPTIONS = [
-  { id: "pending", label: "Pending" },
-  { id: "confirmed", label: "Bestaetigt" },
+  { id: "pending", label: "In Prüfung" },
+  { id: "confirmed", label: "Bestätigt" },
   { id: "preparing", label: "In Vorbereitung" },
   { id: "on_route", label: "Unterwegs" },
   { id: "completed", label: "Abgeschlossen" },
@@ -22,7 +22,7 @@ export const BOOKING_PRIORITY_OPTIONS = [
 export const BOOKING_ASSIGNEE_OPTIONS = [
   { id: "", label: "Nicht zugewiesen" },
   { id: "vertrieb", label: "Vertrieb" },
-  { id: "kueche", label: "Kueche" },
+  { id: "kueche", label: "Küche" },
   { id: "logistik", label: "Logistik" },
   { id: "eventleitung", label: "Eventleitung" },
 ];
@@ -36,7 +36,7 @@ export const CUSTOMER_TYPES = [
   {
     id: "private",
     label: "Privatkunde",
-    description: "Private Anfrage fuer Feiern und kleinere Formate.",
+    description: "Private Anfrage für Feiern und kleinere Formate.",
   },
 ];
 
@@ -50,13 +50,13 @@ export const FOOD_PACKAGES = [
   {
     id: "premium-event",
     name: "Premium Event",
-    description: "Mehrgaengiges Buffet mit saisonalen Spezialitaeten.",
+    description: "Mehrgängiges Buffet mit saisonalen Spezialitäten.",
     approxPricePerPerson: 36,
   },
   {
     id: "executive-signature",
     name: "Executive Signature",
-    description: "Live-Cooking, Flying Service und High-End Praesentation.",
+    description: "Live-Cooking, Flying Service und hochwertige Präsentation.",
     approxPricePerPerson: 49,
   },
 ];
@@ -70,11 +70,11 @@ export const FULFILLMENT_OPTIONS = [
   {
     id: "delivery_staff",
     label: "Lieferung + Personal",
-    description: "Anlieferung inklusive Servicepersonal fuer Event-Betreuung.",
+    description: "Anlieferung inklusive Servicepersonal für die Betreuung vor Ort.",
   },
   {
     id: "pickup",
-    label: "Pickup",
+    label: "Abholung",
     description: "Abholung durch den Kunden am vereinbarten Standort.",
   },
 ];
@@ -94,8 +94,8 @@ export const DEMO_SEED_BOOKINGS = [
     contactPerson: "Laura Stein",
     email: "laura.stein@mustertech.de",
     phone: "+49 711 1234 980",
-    eventAddress: "Industriestrasse 14, 70173 Stuttgart",
-    note: "Jahresauftakt mit Buehnenslot um 19:30 Uhr.",
+    eventAddress: "Industriestraße 14, 70173 Stuttgart",
+    note: "Jahresauftakt mit Bühnenslot um 19:30 Uhr.",
     isSeed: true,
   },
   {
@@ -113,7 +113,7 @@ export const DEMO_SEED_BOOKINGS = [
     email: "verwaltung@bildungszentrum-nord.de",
     phone: "+49 40 8011 450",
     eventAddress: "Neuer Kamp 22, 20359 Hamburg",
-    note: "Vegetarische Option fuer 20 Personen.",
+    note: "Vegetarische Option für 20 Personen.",
     isSeed: true,
   },
   {
@@ -131,7 +131,7 @@ export const DEMO_SEED_BOOKINGS = [
     email: "nina.keller@email.de",
     phone: "+49 173 445 9011",
     eventAddress: "",
-    note: "Familienfeier, Abholung im Thermobehaelter.",
+    note: "Familienfeier, Abholung im Thermobehälter.",
     isSeed: true,
   },
 ];

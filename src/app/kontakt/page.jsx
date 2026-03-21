@@ -8,25 +8,25 @@ import ImmersiveGallery from "@/components/ImmersiveGallery";
 
 const panoramaKontaktShowcase = {
   sectionId: "kontakt-showcase",
-  eyebrow: "Kontakt Showcase",
-  title: "Einblicke fuer das Erstgespraech",
+  eyebrow: "Einblicke",
+  title: "Einblicke für das Erstgespräch",
   description:
-    "Diese Galerie zeigt typische Einsatzbereiche von Panorama Catering und hilft beim schnellen Projektabgleich im Erstkontakt.",
+    "Diese Galerie zeigt typische Einsatzbereiche von Panorama Catering und unterstützt ein ruhiges, gut strukturiertes Erstgespräch.",
   highlights: [
     {
       kicker: "Betrieb",
       title: "Betriebsgastronomie",
-      text: "Laufende Verpflegung fuer Unternehmen und Standorte unterschiedlicher Groesse.",
+      text: "Laufende Verpflegung für Unternehmen und Standorte unterschiedlicher Größe.",
     },
     {
       kicker: "Bildung",
       title: "Schule und Kita",
-      text: "Verpflegungslinien mit klaren Qualitaets- und Prozessstandards.",
+      text: "Verpflegungslösungen mit klaren Qualitäts- und Prozessstandards.",
     },
     {
       kicker: "Event",
       title: "Konferenz und Messe",
-      text: "Flexible Formate fuer Veranstaltungen, Business-Events und Sport.",
+      text: "Flexible Formate für Veranstaltungen, Business-Events und Sport.",
     },
   ],
   ctaPrimary: { label: "Hotline anrufen", href: "tel:+4979409307820" },
@@ -35,33 +35,33 @@ const panoramaKontaktShowcase = {
     {
       src: "/panorama/pc-home-01.jpg",
       title: "Panorama Catering",
-      text: "Unternehmensansicht fuer den ersten Eindruck.",
+      text: "Unternehmensansicht für einen starken ersten Eindruck.",
       category: "Unternehmen",
       layout: "wide",
     },
     {
       src: "/panorama/betriebsrestaurant.jpg",
       title: "Betriebsrestaurant",
-      text: "Verpflegung fuer den Arbeitsalltag.",
+      text: "Verpflegung für den Arbeitsalltag und den laufenden Betrieb.",
       category: "Betrieb",
     },
     {
       src: "/panorama/pc-sk-dge-02.jpg",
       title: "Schule und Kita",
-      text: "Alltagstaugliche Versorgung fuer Einrichtungen.",
+      text: "Alltagstaugliche Versorgung für Einrichtungen und Träger.",
       category: "Bildung",
       layout: "tall",
     },
     {
       src: "/panorama/pc-philo-03.jpg",
       title: "Service und Team",
-      text: "Operative Umsetzung vor Ort.",
+      text: "Operative Umsetzung mit verlässlichen Ansprechpartnern.",
       category: "Unternehmen",
     },
     {
       src: "/panorama/wuerth-open-air-26-aushilfe.jpg",
       title: "Eventbetrieb",
-      text: "Support fuer groessere Veranstaltungsformate.",
+      text: "Unterstützung für größere Veranstaltungsformate.",
       category: "Event",
     },
   ],
@@ -119,8 +119,8 @@ export default function KontaktPage() {
                     Ihr direkter Draht zu <em>Panorama Catering</em>
                   </h1>
                   <h4 data-aos="fade-up" data-aos-delay="400">
-                    Senden Sie uns Eckdaten zu Standort, Personenzahl und Einsatzbereich.
-                    Unser Team meldet sich zeitnah mit einem passenden Vorschlag.
+                    Senden Sie uns Eckdaten zu Standort, Personenzahl und Einsatzbereich. Unser
+                    Team meldet sich zeitnah mit einem passenden Vorschlag für Ihr Projekt.
                   </h4>
                 </div>
               </div>
@@ -144,7 +144,7 @@ export default function KontaktPage() {
                     <ul>
                       <li>
                         <a href="https://maps.google.com/?q=Gartenstrasse+13+74653+Kuenzelsau" target="_blank" rel="noreferrer">
-                          Gartenstrasse 13, 74653 Kuenzelsau
+                          Gartenstraße 13, 74653 Künzelsau
                         </a>
                       </li>
                     </ul>
@@ -209,7 +209,7 @@ export default function KontaktPage() {
                               <label>Unternehmen / Einrichtung</label>
                             </div>
                             <div className="ff-el-input--content">
-                              <input type="text" name="company" className="ff-el-form-control" placeholder="Unternehmen oder Traeger" />
+                              <input type="text" name="company" className="ff-el-form-control" placeholder="Unternehmen oder Träger" />
                             </div>
                           </div>
                         </div>
@@ -233,7 +233,7 @@ export default function KontaktPage() {
                           <textarea
                             name="message"
                             className="ff-el-form-control"
-                            placeholder="Beschreiben Sie kurz Ihren Bedarf, Zeitraum und Personenzahl."
+                            placeholder="Beschreiben Sie kurz Ihren Bedarf, den Zeitraum und die Personenzahl."
                             rows={4}
                             required
                           ></textarea>

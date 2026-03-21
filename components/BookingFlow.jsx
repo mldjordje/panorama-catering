@@ -18,7 +18,7 @@ const STEPS = [
   "Serviceart",
   "Termin",
   "Kontaktdaten",
-  "Uebersicht",
+  "Übersicht",
 ];
 
 const INITIAL_FORM = {
@@ -74,23 +74,23 @@ export default function BookingFlow() {
   const validateStep = (stepIndex) => {
     if (stepIndex === 1) {
       const people = Number(form.peopleCount);
-      if (!form.customerType) return "Bitte waehlen Sie den Kundentyp.";
+      if (!form.customerType) return "Bitte wählen Sie den Kundentyp.";
       if (!Number.isFinite(people) || people < 1) {
-        return "Bitte geben Sie eine gueltige Personenanzahl ein.";
+        return "Bitte geben Sie eine gültige Personenzahl ein.";
       }
     }
 
     if (stepIndex === 2 && !form.packageId) {
-      return "Bitte waehlen Sie ein Verpflegungspaket.";
+      return "Bitte wählen Sie ein Verpflegungspaket.";
     }
 
     if (stepIndex === 3 && !form.fulfillment) {
-      return "Bitte waehlen Sie eine Serviceart.";
+      return "Bitte wählen Sie eine Serviceart.";
     }
 
     if (stepIndex === 4) {
-      if (!form.eventDate) return "Bitte waehlen Sie ein Datum.";
-      if (!form.eventTime) return "Bitte waehlen Sie eine Uhrzeit.";
+      if (!form.eventDate) return "Bitte wählen Sie ein Datum.";
+      if (!form.eventTime) return "Bitte wählen Sie eine Uhrzeit.";
     }
 
     if (stepIndex === 5) {
@@ -107,7 +107,7 @@ export default function BookingFlow() {
         if (!trimValue(form.firstName)) return "Bitte Vorname eintragen.";
         if (!trimValue(form.lastName)) return "Bitte Nachname eintragen.";
         if (isAddressRequired && !trimValue(form.eventAddress)) {
-          return "Bitte Adresse fuer Lieferung eintragen.";
+          return "Bitte Adresse für die Lieferung eintragen.";
         }
       }
     }
@@ -159,7 +159,7 @@ export default function BookingFlow() {
 
     const saved = saveDemoBooking(payload);
     if (!saved) {
-      setError("Speichern im Browser war nicht moeglich.");
+      setError("Speichern im Browser war nicht möglich.");
       return;
     }
 
@@ -262,7 +262,7 @@ export default function BookingFlow() {
               />
             </label>
             <label className="pc-booking-label">
-              Gewuenschte Uhrzeit
+              Gewünschte Uhrzeit
               <input
                 type="time"
                 value={form.eventTime}
@@ -349,7 +349,7 @@ export default function BookingFlow() {
                 type="text"
                 value={form.eventAddress}
                 onChange={(event) => updateField("eventAddress", event.target.value)}
-                placeholder="Strasse, PLZ, Ort"
+                placeholder="Straße, PLZ, Ort"
               />
             </label>
           )}
@@ -376,7 +376,7 @@ export default function BookingFlow() {
       <div className="pc-booking-pane pc-booking-summary">
         <div className="pc-booking-summary-row">
           <span>Status</span>
-          <strong className="is-pending">pending</strong>
+          <strong className="is-pending">In Prüfung</strong>
         </div>
         <div className="pc-booking-summary-row">
           <span>Kunde</span>
@@ -411,7 +411,7 @@ export default function BookingFlow() {
 
         <div className="pc-booking-submit-row">
           <button type="button" className="button white" onClick={submitForm}>
-            Anfrage mit Status pending senden
+            Anfrage erfassen
           </button>
         </div>
       </div>
@@ -421,9 +421,9 @@ export default function BookingFlow() {
   return (
     <div className="pc-booking-widget">
       <div className="pc-booking-widget-head">
-        <p className="pc-booking-kicker">BOOKING DEMO</p>
+        <p className="pc-booking-kicker">ANFRAGEFORMULAR</p>
         <h2>Catering-Anfrage in 6 Schritten</h2>
-        <p>B2B ist vorausgewaehlt. Privatkunden koennen direkt umschalten.</p>
+        <p>Unternehmen, Einrichtungen und Veranstalter sind vorausgewählt. Privatkunden können direkt umschalten.</p>
       </div>
 
       <ol className="pc-booking-stepper">
@@ -440,16 +440,16 @@ export default function BookingFlow() {
 
       {submitted ? (
         <div className="pc-booking-success">
-          <p className="pc-booking-kicker">ANFRAGE GESPEICHERT</p>
-          <h3>Vielen Dank. Der aktuelle Status ist pending.</h3>
+          <p className="pc-booking-kicker">ANFRAGE ERFASST</p>
+          <h3>Vielen Dank. Ihre Anfrage wurde im Demo-System erfasst.</h3>
           <p>Referenz: {submitted.id}</p>
           <p>Termin: {formatDateTimeLabel(submitted.eventDate, submitted.eventTime)}</p>
           <p>
-            Diese Demo-Anfrage ist lokal gespeichert und erscheint direkt im Admin-Dashboard unter
-            <a href="/admin"> /admin</a>.
+            Im Präsentationsmodus wird die Anfrage lokal im Browser gespeichert, damit sie im
+            Gespräch direkt nachvollziehbar bleibt.
           </p>
           <button type="button" className="button" onClick={resetFlow}>
-            Neue Anfrage starten
+            Neue Anfrage erfassen
           </button>
         </div>
       ) : (
@@ -460,7 +460,7 @@ export default function BookingFlow() {
 
           <div className="pc-booking-actions">
             <button type="button" className="button noborder" onClick={previousStep} disabled={step === 1}>
-              Zurueck
+              Zurück
             </button>
 
             {step < STEPS.length ? (

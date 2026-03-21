@@ -1,8 +1,8 @@
 const FOOTER_ITEMS = [
-  { href: "/#leistungen", label: "Leistungen" },
+  { href: "/#leistungen", label: "Leistungsfelder" },
   { href: "/#philosophie", label: "Philosophie" },
-  { href: "/#branchen", label: "Branchen" },
-  { href: "/booking", label: "Booking" },
+  { href: "/#branchen", label: "Einsatzfelder" },
+  { href: "/booking", label: "Anfrage" },
   { href: "/#panorama-galerie", label: "Galerie" },
   { href: "/#kontakt", label: "Kontakt" },
 ];
@@ -42,7 +42,7 @@ export default function TemplateFooter() {
                 </li>
                 <li>
                   <a href="https://maps.google.com/?q=Gartenstrasse+13+74653+Kuenzelsau" target="_blank" rel="noreferrer">
-                    Gartenstrasse 13, 74653 Kuenzelsau
+                    Gartenstraße 13, 74653 Künzelsau
                   </a>
                 </li>
               </ul>
@@ -57,7 +57,7 @@ export default function TemplateFooter() {
               <ul>
                 <li><p>Betriebsrestaurants und Kantinen</p></li>
                 <li><p>Schul- und Kitaverpflegung</p></li>
-                <li><p>Konferenzservice, Events und Privatfeiern</p></li>
+                <li><p>Konferenzservice, Events, Messen und Privatfeiern</p></li>
               </ul>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function TemplateFooter() {
             </div>
             <div className="element-informations">
               <ul>
-                <li><p>Deutschland: Hohenlohe, Unterland, Raum Ludwigsburg/Stuttgart, Markgraeflerland, Berlin, Main-Tauber-Kreis</p></li>
+                <li><p>Deutschland: Hohenlohe, Unterland, Raum Ludwigsburg und Stuttgart, Markgräferland, Berlin, Main-Tauber-Kreis</p></li>
                 <li><p>Schweiz: Bodensee, St. Gallen</p></li>
               </ul>
             </div>
@@ -82,7 +82,7 @@ export default function TemplateFooter() {
         </div>
 
         <div className="footer-bottom">
-          <p>(c) 2026 Panorama Hotel- und Service GmbH</p>
+          <p>© 2026 Panorama Hotel- und Service GmbH</p>
           <p>
             <a href="https://www.panorama-catering.de/kontakt/impressum" target="_blank" rel="noreferrer">
               Impressum

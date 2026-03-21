@@ -1,8 +1,8 @@
 const NAV_ITEMS = [
-  { href: "/#leistungen", label: "Leistungen" },
+  { href: "/#leistungen", label: "Leistungsfelder" },
   { href: "/#philosophie", label: "Philosophie" },
-  { href: "/#branchen", label: "Branchen" },
-  { href: "/booking", label: "Booking" },
+  { href: "/#branchen", label: "Einsatzfelder" },
+  { href: "/booking", label: "Anfrage" },
   { href: "/#panorama-galerie", label: "Galerie" },
   { href: "/#kontakt", label: "Kontakt" },
 ];
@@ -35,7 +35,7 @@ export default function TemplateHeader() {
 
                 <div className="enquiry-element">
                   <a href="/booking" className="button">
-                    Booking Demo
+                    Anfrage
                   </a>
                 </div>
               </div>
@@ -85,7 +85,7 @@ export default function TemplateHeader() {
                   </li>
                   <li>
                     <a href="https://maps.google.com/?q=Gartenstrasse+13+74653+Kuenzelsau" target="_blank" rel="noreferrer">
-                      Gartenstrasse 13, 74653 Kuenzelsau
+                      Gartenstraße 13, 74653 Künzelsau
                     </a>
                   </li>
                 </ul>

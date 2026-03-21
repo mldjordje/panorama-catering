@@ -3,25 +3,25 @@ import TemplateFooter from "@/components/TemplateFooter";
 import BookingFlow from "@/components/BookingFlow";
 
 export const metadata = {
-  title: "Booking | Panorama Catering",
-  description: "Demo Booking Flow fuer Panorama Catering mit B2B Fokus.",
+  title: "Anfrage | Panorama Catering",
+  description: "Strukturiertes Anfrageformular für Betriebsrestaurants, Bildungseinrichtungen und Veranstaltungen.",
 };
 
 const bookingVisuals = [
   {
     src: "/panorama/betriebsrestaurant.jpg",
-    title: "B2B Fokus",
-    text: "Firmen, Bildungs- und Eventkunden in einem klaren Anfragefluss.",
+    title: "Betriebsrestaurant",
+    text: "Klare Erfassung für Unternehmen, Standorte und wiederkehrende Verpflegungssituationen.",
   },
   {
     src: "/panorama/pc-philo-03.jpg",
-    title: "Lieferung oder Personal",
-    text: "Lieferung, Lieferung mit Personal oder Pickup in einem Schritt.",
+    title: "Servicebausteine",
+    text: "Lieferung, Servicepersonal und Abholung lassen sich strukturiert vorqualifizieren.",
   },
   {
     src: "/panorama/wuerth-open-air-26-aushilfe.jpg",
-    title: "Skalierbare Events",
-    text: "Von kleinen Formaten bis zu groesseren Business Events.",
+    title: "Veranstaltungen",
+    text: "Von kleineren Formaten bis zu größeren Business-Events sauber vorbereitet.",
   },
 ];
 
@@ -34,14 +34,15 @@ export default function BookingPage() {
         <section className="panorama-booking-hero">
           <div className="pagewrap">
             <p className="panorama-eyebrow" data-aos="fade-up">
-              Panorama Catering Booking
+              Anfrage
             </p>
             <h1 data-aos="fade-up" data-aos-delay="100">
-              Anfrage fuer Catering in wenigen Schritten
+              Ihr Weg zum passenden Catering-Konzept
             </h1>
             <p data-aos="fade-up" data-aos-delay="180">
-              Dieser Demo-Flow priorisiert B2B Anfragen, bietet aber auch eine private Buchung.
-              Jede neue Anfrage wird mit Status <strong>pending</strong> angezeigt.
+              Für die Präsentation steht ein strukturiertes Anfrageformular bereit. Es erfasst die
+              wichtigsten Angaben für Beratung und Angebotserstellung und zeigt, wie Panorama
+              Catering Anfragen klar und professionell vorqualifiziert.
             </p>
           </div>
         </section>

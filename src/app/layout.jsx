@@ -4,7 +4,7 @@ import "@mantine/core/styles.css";
 
 export const metadata = {
   title: "Panorama Catering",
-  description: "Panorama Catering - massgeschneiderte Konzepte fuer Betriebsrestaurants, Schulen, Kitas und Events.",
+  description: "Panorama Catering - maßgeschneiderte Konzepte für Betriebsrestaurants, Schulen, Kitas und Veranstaltungen.",
 };
 
 export const viewport = {

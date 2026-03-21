@@ -1,7 +1,7 @@
 {
   "settings": {
     "siteName": "Panorama Catering",
-    "siteDescription": "Panorama Catering - massgeschneiderte Konzepte fuer Betriebsrestaurants, Schulen, Kitas und Events.",
+    "siteDescription": "Panorama Catering - maßgeschneiderte Konzepte für Betriebsrestaurants, Schulen, Kitas und Veranstaltungen.",
     "formspreeURL": "https://formspree.io/f/your_api_key",
     "mapbox": {
       "AccessToken": "*",
@@ -26,7 +26,7 @@
     ]
   },
   "footer": {
-    "copy": "(c) 2026 Panorama Hotel- und Service GmbH. Alle Rechte vorbehalten."
+    "copy": "© 2026 Panorama Hotel- und Service GmbH. Alle Rechte vorbehalten."
   },
   "social": [
     { "link": "https://www.instagram.com/panoramacatering/", "title": "Instagram", "icon": "fab fa-instagram" },
