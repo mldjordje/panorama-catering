@@ -3,7 +3,7 @@ const FOOTER_ITEMS = [
   { href: "/#philosophie", label: "Philosophie" },
   { href: "/#branchen", label: "Einsatzfelder" },
   { href: "/booking", label: "Anfrage" },
-  { href: "/#panorama-galerie", label: "Galerie" },
+  { href: "/angebote", label: "Pakete" },
   { href: "/#kontakt", label: "Kontakt" },
 ];
 
@@ -42,7 +42,7 @@ export default function TemplateFooter() {
                 </li>
                 <li>
                   <a href="https://maps.google.com/?q=Gartenstrasse+13+74653+Kuenzelsau" target="_blank" rel="noreferrer">
-                    Gartenstraße 13, 74653 Künzelsau
+                    {"Gartenstra\u00dfe 13, 74653 K\u00fcnzelsau"}
                   </a>
                 </li>
               </ul>
@@ -68,7 +68,11 @@ export default function TemplateFooter() {
             </div>
             <div className="element-informations">
               <ul>
-                <li><p>Deutschland: Hohenlohe, Unterland, Raum Ludwigsburg und Stuttgart, Markgräferland, Berlin, Main-Tauber-Kreis</p></li>
+                <li>
+                  <p>
+                    {"Deutschland: Hohenlohe, Unterland, Raum Ludwigsburg und Stuttgart, Markgr\u00e4ferland, Berlin, Main-Tauber-Kreis"}
+                  </p>
+                </li>
                 <li><p>Schweiz: Bodensee, St. Gallen</p></li>
               </ul>
             </div>
@@ -82,7 +86,7 @@ export default function TemplateFooter() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 Panorama Hotel- und Service GmbH</p>
+          <p>{"\u00a9 2026 Panorama Hotel- und Service GmbH"}</p>
           <p>
             <a href="https://www.panorama-catering.de/kontakt/impressum" target="_blank" rel="noreferrer">
               Impressum

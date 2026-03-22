@@ -3,7 +3,7 @@ const NAV_ITEMS = [
   { href: "/#philosophie", label: "Philosophie" },
   { href: "/#branchen", label: "Einsatzfelder" },
   { href: "/booking", label: "Anfrage" },
-  { href: "/#panorama-galerie", label: "Galerie" },
+  { href: "/angebote", label: "Pakete" },
   { href: "/#kontakt", label: "Kontakt" },
 ];
 
@@ -85,7 +85,7 @@ export default function TemplateHeader() {
                   </li>
                   <li>
                     <a href="https://maps.google.com/?q=Gartenstrasse+13+74653+Kuenzelsau" target="_blank" rel="noreferrer">
-                      Gartenstraße 13, 74653 Künzelsau
+                      {"Gartenstra\u00dfe 13, 74653 K\u00fcnzelsau"}
                     </a>
                   </li>
                 </ul>

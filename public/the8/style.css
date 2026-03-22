@@ -3184,3 +3184,442 @@ h1 em{font-size: 82px;}
         padding: 22px;
     }
 }
+
+/* Panorama package sales demo */
+.angebote-page {
+    background: #050505;
+}
+
+.angebote-hero {
+    padding: 150px 0px 70px 0px;
+    background:
+        radial-gradient(circle at top left, rgba(171, 120, 44, 0.28), transparent 34%),
+        radial-gradient(circle at 80% 20%, rgba(113, 31, 21, 0.34), transparent 30%),
+        linear-gradient(180deg, #090909 0%, #050505 100%);
+}
+
+.angebote-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.angebote-hero-copy h1 {
+    color: #fff;
+    max-width: 900px;
+}
+
+.angebote-hero-subtitle {
+    max-width: 780px;
+    color: #d8d8d8;
+    padding-top: 16px;
+}
+
+.angebote-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.angebote-badge {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    min-height: 38px;
+    padding: 8px 14px;
+    color: #efefef;
+    font-size: 13px;
+    line-height: 16px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.angebote-hero-actions {
+    margin-top: 24px;
+}
+
+.angebote-hero-proof {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.angebote-hero-proof-card,
+.angebote-hero-visual {
+    border: 1px solid #242424;
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgba(16, 16, 16, 0.9);
+}
+
+.angebote-hero-proof-card {
+    padding: 18px;
+}
+
+.angebote-hero-proof-card h3 {
+    color: #fff;
+}
+
+.angebote-hero-proof-card p {
+    color: #cecece;
+    padding-top: 10px;
+}
+
+.angebote-hero-visual img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.angebote-section {
+    padding: 80px 0px;
+}
+
+.angebote-section-light {
+    background: #f8f3eb;
+}
+
+.angebote-section-dark {
+    background: #0d0d0d;
+}
+
+.angebote-section-light .section-title p,
+.angebote-section-light .section-bigtitle h2 {
+    color: #161616;
+}
+
+.angebote-section-dark .section-title p,
+.angebote-section-dark .section-bigtitle h2 {
+    color: #fff;
+}
+
+.angebote-section-intro {
+    max-width: 860px;
+    color: #4f4f4f;
+    padding-top: 18px;
+}
+
+.angebote-section-intro.is-dark {
+    color: #d0d0d0;
+}
+
+.angebote-audit-grid,
+.angebote-gap-grid,
+.angebote-package-grid,
+.angebote-addon-grid,
+.angebote-process-grid {
+    margin-top: 26px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+.angebote-audit-card,
+.angebote-gap-card,
+.angebote-package-card,
+.angebote-addon-card,
+.angebote-retainer-card,
+.angebote-next-card,
+.angebote-script-card,
+.angebote-roi-card,
+.angebote-process-card,
+.angebote-source-box {
+    border-radius: 16px;
+}
+
+.angebote-audit-card,
+.angebote-addon-card,
+.angebote-retainer-card,
+.angebote-next-card,
+.angebote-source-box {
+    border: 1px solid #dfd2bf;
+    background: #fff;
+}
+
+.angebote-gap-card,
+.angebote-roi-card,
+.angebote-process-card,
+.angebote-package-card,
+.angebote-script-card {
+    border: 1px solid #292929;
+    background: #121212;
+}
+
+.angebote-audit-card,
+.angebote-gap-card,
+.angebote-addon-card,
+.angebote-retainer-card,
+.angebote-next-card,
+.angebote-script-card,
+.angebote-roi-card,
+.angebote-process-card,
+.angebote-source-box {
+    padding: 18px;
+}
+
+.angebote-audit-card h4,
+.angebote-addon-card h4,
+.angebote-next-card h3,
+.angebote-source-box h4 {
+    color: #181818;
+}
+
+.angebote-gap-card h4,
+.angebote-package-card h3,
+.angebote-package-card .angebote-package-kicker,
+.angebote-retainer-card h3,
+.angebote-roi-card h3,
+.angebote-process-card h4,
+.angebote-script-card h3,
+.angebote-script-step h4 {
+    color: #fff;
+}
+
+.angebote-audit-card p,
+.angebote-addon-card p,
+.angebote-retainer-card p,
+.angebote-next-card p,
+.angebote-source-box p,
+.angebote-source-list a {
+    color: #505050;
+}
+
+.angebote-gap-card p,
+.angebote-package-card p,
+.angebote-package-card span,
+.angebote-roi-card p,
+.angebote-process-card p,
+.angebote-script-card p,
+.angebote-script-step p {
+    color: #d0d0d0;
+}
+
+.angebote-audit-card p + p,
+.angebote-gap-card p,
+.angebote-addon-card p,
+.angebote-source-list,
+.angebote-roi-card ul,
+.angebote-next-card ul,
+.angebote-script-steps {
+    margin-top: 12px;
+}
+
+.angebote-source-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+
+.angebote-source-list a {
+    text-decoration: underline;
+}
+
+.angebote-package-grid {
+    align-items: stretch;
+}
+
+.angebote-package-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.angebote-package-card.is-featured {
+    border-color: rgba(215, 180, 106, 0.7);
+    background:
+        linear-gradient(180deg, rgba(215, 180, 106, 0.08), rgba(18, 18, 18, 1)),
+        #121212;
+    box-shadow: 0px 18px 60px rgba(0, 0, 0, 0.28);
+}
+
+.angebote-package-head h3,
+.angebote-retainer-card h3 {
+    font-size: 34px;
+    line-height: 38px;
+    padding-top: 8px;
+}
+
+.angebote-package-head span,
+.angebote-retainer-card span {
+    display: block;
+    padding-top: 6px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #bfbfbf;
+}
+
+.angebote-package-kicker {
+    margin: 0px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #d7b46a;
+}
+
+.angebote-package-summary {
+    color: #efefef;
+}
+
+.angebote-package-fit {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.angebote-check-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+
+.angebote-check-list li {
+    position: relative;
+    padding-left: 22px;
+    color: inherit;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.angebote-check-list li::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #d7b46a;
+}
+
+.angebote-package-card .button,
+.angebote-next-card .button {
+    margin-top: auto;
+}
+
+.angebote-roi-grid,
+.angebote-next-grid {
+    margin-top: 26px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+.angebote-roi-card.is-highlight {
+    padding: 22px;
+    background:
+        radial-gradient(circle at top left, rgba(215, 180, 106, 0.16), transparent 30%),
+        #141414;
+}
+
+.angebote-retainer-card p,
+.angebote-script-intro {
+    padding-top: 12px;
+}
+
+.angebote-addon-grid {
+    margin-top: 18px;
+}
+
+.angebote-addon-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: start;
+}
+
+.angebote-addon-head span {
+    color: #181818;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.angebote-process-card span {
+    color: #d7b46a;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.angebote-process-card h4 {
+    margin-top: 10px;
+}
+
+.angebote-next-actions {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.angebote-next-actions .button {
+    width: 100%;
+    max-width: none;
+}
+
+.angebote-script-step + .angebote-script-step {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid #262626;
+}
+
+@media screen and (min-width:720px) {
+    .angebote-audit-grid,
+    .angebote-gap-grid,
+    .angebote-package-grid,
+    .angebote-addon-grid,
+    .angebote-process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .angebote-hero-proof {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .angebote-hero-visual {
+        grid-column: 1 / -1;
+    }
+
+    .angebote-hero-visual img {
+        height: 320px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .angebote-hero-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+        align-items: center;
+        gap: 22px;
+    }
+
+    .angebote-package-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .angebote-gap-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .angebote-addon-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .angebote-process-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .angebote-roi-grid,
+    .angebote-next-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .angebote-next-actions {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
