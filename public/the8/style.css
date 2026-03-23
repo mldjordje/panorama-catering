@@ -3469,6 +3469,13 @@ h1 em{font-size: 82px;}
     line-height: 22px;
 }
 
+.angebote-package-fit strong,
+.angebote-package-card .angebote-check-list li,
+.angebote-roi-card .angebote-check-list li,
+.angebote-script-card .angebote-check-list li {
+    color: #f1f1f1;
+}
+
 .angebote-check-list {
     list-style: none;
     display: grid;
