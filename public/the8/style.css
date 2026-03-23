@@ -3437,8 +3437,8 @@ h1 em{font-size: 82px;}
 
 .angebote-package-head h3,
 .angebote-retainer-card h3 {
-    font-size: 34px;
-    line-height: 38px;
+    font-size: 24px;
+    line-height: 30px;
     padding-top: 8px;
 }
 
@@ -3467,6 +3467,20 @@ h1 em{font-size: 82px;}
 .angebote-package-fit {
     font-size: 15px;
     line-height: 22px;
+}
+
+.angebote-package-block {
+    display: grid;
+    gap: 10px;
+}
+
+.angebote-package-block h4 {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d7b46a;
 }
 
 .angebote-package-fit strong,
@@ -3504,6 +3518,19 @@ h1 em{font-size: 82px;}
 .angebote-package-card .button,
 .angebote-next-card .button {
     margin-top: auto;
+}
+
+.angebote-package-actions {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.angebote-package-actions .button {
+    width: 100%;
+    max-width: none;
+    margin-top: 0px;
 }
 
 .angebote-roi-grid,
@@ -3605,7 +3632,7 @@ h1 em{font-size: 82px;}
     }
 
     .angebote-package-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .angebote-gap-grid {

@@ -146,18 +146,42 @@ export default function AngebotePage() {
                 >
                   <div className="angebote-package-head">
                     <p className="angebote-package-kicker">{item.name}</p>
-                    <h3>{item.price}</h3>
-                    <span>{item.retainer}</span>
+                    <h3>{item.headline}</h3>
+                    <span>{item.subline}</span>
                   </div>
                   <p className="angebote-package-summary">{item.summary}</p>
                   <p className="angebote-package-fit"><strong>F\u00fcr wen geeignet:</strong> {item.fit}</p>
                   <p className="angebote-package-fit"><strong>Zeitrahmen:</strong> {item.timeline}</p>
-                  <ul className="angebote-check-list">
-                    {item.deliverables.map((deliverable) => (
-                      <li key={deliverable}>{deliverable}</li>
-                    ))}
-                  </ul>
-                  <a href={item.cta.href} className="button white">{item.cta.label}</a>
+                  <div className="angebote-package-block">
+                    <h4>{item.includedTitle}</h4>
+                    <ul className="angebote-check-list">
+                      {item.deliverables.map((deliverable) => (
+                        <li key={deliverable}>{deliverable}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="angebote-package-block">
+                    <h4>{item.functionsTitle}</h4>
+                    <ul className="angebote-check-list">
+                      {item.functions.map((feature) => (
+                        <li key={feature}>{feature}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="angebote-package-block">
+                    <h4>{item.impactTitle}</h4>
+                    <ul className="angebote-check-list">
+                      {item.impacts.map((impact) => (
+                        <li key={impact}>{impact}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="angebote-package-actions">
+                    <a href={item.cta.href} className="button white">{item.cta.label}</a>
+                    {item.secondaryCta ? (
+                      <a href={item.secondaryCta.href} className="button">{item.secondaryCta.label}</a>
+                    ) : null}
+                  </div>
                 </article>
               ))}
             </div>
