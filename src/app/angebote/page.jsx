@@ -185,7 +185,7 @@ export default function AngebotePage() {
                     <li key={bullet}>{bullet}</li>
                   ))}
                 </ul>
-                <a href="/booking" className="button white">Live-Demo \u00f6ffnen</a>
+                <a href="/booking" className="button white">Anfrage-Flow live zeigen</a>
               </article>
 
               <div className="angebote-roi-proof">
@@ -279,7 +279,7 @@ export default function AngebotePage() {
 
             <div className="angebote-next-grid">
               <article className="angebote-next-card" data-aos="fade-right" data-aos-delay="180">
-                <h3>Empfohlener Close</h3>
+                <h3>{"Empfohlener n\u00e4chster Schritt"}</h3>
                 <ul className="angebote-check-list">
                   {nextStep.pilotPoints.map((point) => (
                     <li key={point}>{point}</li>
