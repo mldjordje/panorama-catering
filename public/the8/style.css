@@ -3309,6 +3309,7 @@ h1 em{font-size: 82px;}
 .angebote-gap-grid,
 .angebote-package-grid,
 .angebote-addon-grid,
+.angebote-stakeholder-grid,
 .angebote-process-grid {
     margin-top: 26px;
     display: grid;
@@ -3324,6 +3325,7 @@ h1 em{font-size: 82px;}
 .angebote-next-card,
 .angebote-script-card,
 .angebote-roi-card,
+.angebote-stakeholder-card,
 .angebote-process-card,
 .angebote-source-box {
     border-radius: 16px;
@@ -3341,6 +3343,7 @@ h1 em{font-size: 82px;}
 .angebote-gap-card,
 .angebote-roi-card,
 .angebote-process-card,
+.angebote-stakeholder-card,
 .angebote-package-card,
 .angebote-script-card {
     border: 1px solid #292929;
@@ -3354,6 +3357,7 @@ h1 em{font-size: 82px;}
 .angebote-next-card,
 .angebote-script-card,
 .angebote-roi-card,
+.angebote-stakeholder-card,
 .angebote-process-card,
 .angebote-source-box {
     padding: 18px;
@@ -3371,6 +3375,7 @@ h1 em{font-size: 82px;}
 .angebote-package-card .angebote-package-kicker,
 .angebote-retainer-card h3,
 .angebote-roi-card h3,
+.angebote-stakeholder-card h3,
 .angebote-process-card h4,
 .angebote-script-card h3,
 .angebote-script-step h4 {
@@ -3390,6 +3395,7 @@ h1 em{font-size: 82px;}
 .angebote-package-card p,
 .angebote-package-card span,
 .angebote-roi-card p,
+.angebote-stakeholder-card p,
 .angebote-process-card p,
 .angebote-script-card p,
 .angebote-script-step p {
@@ -3474,6 +3480,25 @@ h1 em{font-size: 82px;}
     gap: 10px;
 }
 
+.angebote-package-module-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.angebote-package-module-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(215, 180, 106, 0.35);
+    background: rgba(215, 180, 106, 0.08);
+    color: #f3f3f3;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
 .angebote-package-block h4 {
     margin: 0px;
     font-size: 14px;
@@ -3513,6 +3538,33 @@ h1 em{font-size: 82px;}
     height: 8px;
     border-radius: 999px;
     background: #d7b46a;
+}
+
+.angebote-feature-detail-list {
+    display: grid;
+    gap: 10px;
+}
+
+.angebote-feature-detail-item {
+    padding: 14px;
+    border-radius: 16px;
+    border: 1px solid rgba(215, 180, 106, 0.16);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.angebote-feature-detail-item h5 {
+    margin: 0px;
+    color: #f7f7f7;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.angebote-feature-detail-item p {
+    margin: 8px 0px 0px;
+    padding-top: 0px;
+    color: #d5d5d5;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 .angebote-package-card .button,
@@ -3572,6 +3624,22 @@ h1 em{font-size: 82px;}
     text-align: right;
 }
 
+.angebote-stakeholder-card {
+    display: grid;
+    gap: 12px;
+}
+
+.angebote-stakeholder-packages {
+    margin: 0px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: rgba(215, 180, 106, 0.08);
+    border: 1px solid rgba(215, 180, 106, 0.18);
+    color: #f0e2bb;
+    font-size: 14px;
+    line-height: 20px;
+}
+
 .angebote-process-card span {
     color: #d7b46a;
     font-size: 13px;
@@ -3607,6 +3675,7 @@ h1 em{font-size: 82px;}
     .angebote-gap-grid,
     .angebote-package-grid,
     .angebote-addon-grid,
+    .angebote-stakeholder-grid,
     .angebote-process-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }

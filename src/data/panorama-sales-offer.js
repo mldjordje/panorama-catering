@@ -99,13 +99,21 @@ const panoramaSalesOffer = {
         title: "Self-Service für Bestandskunden",
         text: "Wiederkehrende B2B-Kunden haben keinen einfachen digitalen Weg für Reorders und Standardanfragen.",
       },
+      {
+        title: "Mitarbeiter- und Einsatzsteuerung",
+        text: "Es gibt keinen zentralen Admin-Bereich, in dem Teams, Aufgaben, Einsätze und Zuständigkeiten pro Auftrag sauber gesteuert werden.",
+      },
+      {
+        title: "Finanz- und Managementsicht",
+        text: "Deckungsbeiträge, offene Posten, Umsatz pro Kunde oder Standort und Freigaben für Entscheider sind nicht als klare Super-Admin-Sicht gebündelt.",
+      },
     ],
   },
   packages: {
     eyebrow: "Unsere Pakete",
     title: "Unser Ausbauplan für mehr Umsatz und weniger Verwaltungsaufwand",
     intro:
-      "Hier ist klar aufgeschlüsselt, was Panorama in jeder Stufe konkret erhält, welche Funktionen enthalten sind und welcher geschäftliche Effekt entsteht. Der Einstieg bleibt bewusst einfach: Der neue Landingpage-Pilot ist bereits vorbereitet, wird kostenlos auf Panorama angepasst und kann auf dem Hauptdomain veröffentlicht werden.",
+      "Hier ist klar aufgeschlüsselt, was Panorama in jeder Stufe konkret erhält, welche Module enthalten sind, wie die Funktionen im Alltag arbeiten und welcher geschäftliche Effekt entsteht. Der Einstieg bleibt bewusst einfach: Der neue Landingpage-Pilot ist bereits vorbereitet, wird kostenlos auf Panorama angepasst und kann auf dem Hauptdomain veröffentlicht werden. Danach kann Panorama bis zu einer vollständigen Vertriebs-, Operations- und Managementplattform ausgebaut werden.",
     items: [
       {
         id: "free-relaunch",
@@ -117,7 +125,9 @@ const panoramaSalesOffer = {
         fit: "Ideal als schneller Einstieg ohne Risiko und ohne lange Entscheidungsphase.",
         timeline: "wenige Arbeitstage bis zur Freigabe",
         includedTitle: "Was Panorama konkret erhält",
+        modulesTitle: "Welche Module in dieser Stufe sichtbar sind",
         functionsTitle: "Welche Funktionen in dieser Stufe enthalten sind",
+        detailTitle: "Wie die Funktionen konkret arbeiten",
         impactTitle: "Welcher geschäftliche Effekt entsteht",
         cta: { label: "Kostenlosen Pilot anfragen", href: "/kontakt" },
         secondaryCta: { label: "Event-Anfrage als Beispiel ansehen", href: "/booking" },
@@ -127,11 +137,35 @@ const panoramaSalesOffer = {
           "klare CTA-Führung für Anfrage, Beratung und Erstgespräch statt reiner Informationsblöcke",
           "Veröffentlichung auf dem Hauptdomain ist möglich, damit Panorama den neuen Auftritt direkt produktiv nutzen kann",
         ],
+        modules: [
+          "Startseiten-Hero mit klarer Positionierung",
+          "Leistungsübersicht für Firmen, Schulen, Kitas und Events",
+          "Kontakt- und Rückrufmodule",
+          "vertriebsstarke CTA-Strecken auf Mobil und Desktop",
+        ],
         functions: [
           "Hero-Bereich mit klarer Positionierung und einem direkten Einstieg in die Kontaktaufnahme",
           "Leistungsblöcke für Business-Catering, Eventservice, Schul- und Kitaverpflegung oder weitere Wunschbereiche",
           "Kontaktsektionen mit Ansprechpartnern, Rückrufimpuls und sauberer Weiterleitung zur Anfrage",
           "vertriebsstärkere Struktur statt eines veralteten, statischen Ersteindrucks",
+        ],
+        featureDetails: [
+          {
+            title: "Hero mit Vertriebspositionierung",
+            text: "Der erste Bildschirm formuliert sofort, für welche Auftraggeber Panorama ideal ist, welche Leistungen stark sind und welchen nächsten Schritt ein Interessent direkt gehen soll.",
+          },
+          {
+            title: "Leistungsblöcke nach Business-Fällen",
+            text: "Statt allgemeiner Textwüsten werden die wichtigsten Leistungsfelder sauber gegliedert, damit Firmenkunden, öffentliche Auftraggeber und Eventkunden ihre Situation sofort wiederfinden.",
+          },
+          {
+            title: "Kontaktgründe statt allgemeiner Kontaktseite",
+            text: "Die Seite gibt dem Besucher mehrere klare Kontaktanlässe wie Beratung, Angebotsanfrage oder Rückruf, damit die Hemmschwelle sinkt und mehr qualifizierte Erstkontakte entstehen.",
+          },
+          {
+            title: "Mobile Reaktionsgeschwindigkeit",
+            text: "Buttons, Kontaktmodule und Seitenaufbau werden so angeordnet, dass Einkaufsleiter, Assistenz oder Eventverantwortliche auch mobil schnell reagieren können.",
+          },
         ],
         impacts: [
           "Panorama wirkt im ersten Kontakt moderner, klarer und hochwertiger",
@@ -149,7 +183,9 @@ const panoramaSalesOffer = {
         fit: "Für Unternehmen, die aus der Website einen aktiven Lead-Kanal machen wollen.",
         timeline: "2 bis 3 Wochen",
         includedTitle: "Was Panorama konkret erhält",
+        modulesTitle: "Welche Module in dieser Stufe enthalten sind",
         functionsTitle: "Welche Funktionen in dieser Stufe enthalten sind",
+        detailTitle: "Wie die Vertriebsfunktionen im Alltag arbeiten",
         impactTitle: "Welcher geschäftliche Effekt entsteht",
         cta: { label: "Vertriebspaket besprechen", href: "/kontakt" },
         secondaryCta: { label: "Beispiel für Catering-Anfrage öffnen", href: "/booking" },
@@ -159,11 +195,35 @@ const panoramaSalesOffer = {
           "Trust-Bausteine wie Referenzen, Einsatzbereiche, Prozessdarstellung und überzeugende Kontaktgründe",
           "Basis-SEO, Conversion-Messpunkte und klare interne Ziele für Formularstarts, Anrufe oder Kontaktanfragen",
         ],
+        modules: [
+          "zielgruppenspezifische Sales-Module",
+          "Referenz- und Trust-Bausteine",
+          "strukturierte Anfrage-Einstiege",
+          "SEO- und Conversion-Grundsetup",
+        ],
         functions: [
           "zielgruppenspezifische Abschnitte für Firmenveranstaltungen, Business-Lunch, Konferenzen oder wiederkehrende Verpflegung",
           "strukturierte Anfrage-Einstiege mit Fragen zu Anlass, Gästezahl, Termin und Standort",
           "klare CTA-Strecken zu Beratung, Angebotsanfrage und persönlichem Gespräch",
           "messbare Kontaktpunkte, damit Panorama später erkennt, welche Inhalte tatsächlich neue Anfragen erzeugen",
+        ],
+        featureDetails: [
+          {
+            title: "Zielgruppenlogik statt Einheitsseite",
+            text: "Einkauf, Assistenz, HR, Office-Management oder Eventverantwortliche sehen jeweils die Argumente, Einsatzbereiche und Leistungen, die zu ihrer konkreten Anfrage passen.",
+          },
+          {
+            title: "Trust-Sektion für größere Auftraggeber",
+            text: "Referenzen, Ablaufdarstellung, Leistungsumfang und Qualitätsargumente werden so aufbereitet, dass auch größere Firmenkunden schneller Vertrauen aufbauen können.",
+          },
+          {
+            title: "Geführte Anfrage-Einstiege",
+            text: "Noch bevor ein kompletter Anfrage-Flow gebaut wird, sammelt die Seite schon strukturierte Basisdaten, damit aus anonymem Traffic deutlich öfter ein verwertbarer Erstkontakt wird.",
+          },
+          {
+            title: "SEO- und Messpunkte für Vertrieb",
+            text: "Panorama bekommt die Grundlage, um Inhalte, Seitenaufrufe, CTA-Klicks und Anfragen später datenbasiert weiterzuentwickeln statt nur nach Bauchgefühl.",
+          },
         ],
         impacts: [
           "mehr qualifizierte Erstgespräche, weil Besucher schneller verstehen, wofür Panorama die richtige Wahl ist",
@@ -181,7 +241,9 @@ const panoramaSalesOffer = {
         fit: "Für Teams, die schneller antworten, sauber priorisieren und mehr passende Anfragen abschließen wollen.",
         timeline: "3 bis 5 Wochen",
         includedTitle: "Was Panorama konkret erhält",
+        modulesTitle: "Welche Module in dieser Stufe enthalten sind",
         functionsTitle: "Welche Funktionen in dieser Stufe enthalten sind",
+        detailTitle: "Wie die Lead- und Admin-Funktionen konkret arbeiten",
         impactTitle: "Welcher geschäftliche Effekt entsteht",
         featured: true,
         cta: { label: "Booking-Demo live zeigen", href: "/booking" },
@@ -192,12 +254,40 @@ const panoramaSalesOffer = {
           "saubere Übergabe an Office, Vertrieb oder Eventkoordination ohne unübersichtliches E-Mail-Pingpong",
           "eine klarere Grundlage für Angebotserstellung, Rückrufe und Priorisierung im Tagesgeschäft",
         ],
+        modules: [
+          "mehrstufiger Anfrage-Flow",
+          "Lead-Dashboard mit Statuslogik",
+          "Rollen- und Zuständigkeitsrouting",
+          "Export-, Notiz- und Übergabemodule",
+        ],
         functions: [
           "Abfrage von Eventtyp, Gästezahl, Datum, Uhrzeit, Ort, Anlass, Budgetrahmen und besonderen Anforderungen",
           "strukturierter Ablauf aus Kundensicht, damit eine Event- oder Catering-Anfrage in wenigen Schritten vollständig gesendet werden kann",
           "Statuslogik wie neu, in Prüfung, Angebot gesendet oder Rückruf offen für bessere interne Übersicht",
           "Notizen, einfache Exportmöglichkeiten und saubere Weitergabe an die zuständige Person",
           "Möglichkeit, das Anfrageformular gezielt für Firmenevents, Meetings, Schulverpflegung oder Sonderanfragen anzupassen",
+        ],
+        featureDetails: [
+          {
+            title: "Mehrstufiger Booking-Flow",
+            text: "Der Anfrageprozess fragt die relevanten Daten in logischer Reihenfolge ab, damit Panorama bereits vor dem ersten Rückruf ein belastbares Briefing für Angebot oder Terminabstimmung vorliegen hat.",
+          },
+          {
+            title: "Lead-Dashboard für Office und Vertrieb",
+            text: "Alle Anfragen landen in einer Oberfläche mit Priorität, Status, Verantwortlichkeit und internen Notizen, sodass Teams keine Informationen mehr aus E-Mails zusammensuchen müssen.",
+          },
+          {
+            title: "Interne SLA- und Routinglogik",
+            text: "Je nach Anfrageart kann festgelegt werden, wer zuständig ist, welche Reaktionszeit gilt und ob der Lead zuerst an Vertrieb, Eventkoordination oder Office weitergeleitet wird.",
+          },
+          {
+            title: "Angebotsvorbereitung mit sauberer Übergabe",
+            text: "Exportierbare Daten, interne Kommentare und strukturierte Pflichtangaben verkürzen die Zeit bis zum Angebot und reduzieren Rückfragen an den Kunden deutlich.",
+          },
+          {
+            title: "Formulare je Leistungsbereich",
+            text: "Panorama kann unterschiedliche Varianten für Firmenveranstaltungen, Lunch-Konzepte, Schulverpflegung oder Sonderproduktionen nutzen, ohne jedes Mal denselben unpassenden Standardprozess zu verwenden.",
+          },
         ],
         impacts: [
           "mehr qualifizierte Anfragen, weil die wichtigsten Informationen schon beim ersten Kontakt vorliegen",
@@ -215,7 +305,9 @@ const panoramaSalesOffer = {
         fit: "Die richtige Ausbaustufe, wenn Bestandskunden einfacher bestellen und intern weniger manuell koordiniert werden soll.",
         timeline: "6 bis 8 Wochen",
         includedTitle: "Was Panorama konkret erhält",
+        modulesTitle: "Welche Module in dieser Stufe enthalten sind",
         functionsTitle: "Welche Funktionen in dieser Stufe enthalten sind",
+        detailTitle: "Wie das Portal im Bestellalltag arbeitet",
         impactTitle: "Welcher geschäftliche Effekt entsteht",
         cta: { label: "Phase 2 vormerken", href: "/kontakt" },
         secondaryCta: { label: "Vorher die Anfrage-Demo ansehen", href: "/booking" },
@@ -225,16 +317,104 @@ const panoramaSalesOffer = {
           "eine sauberere Struktur für Ansprechpartner, Standardwünsche und wiederkehrende Bestellungsmuster",
           "spürbar weniger E-Mails, Telefonate und Abstimmungsaufwand bei bekannten Abläufen",
         ],
+        modules: [
+          "Kundenaccounts für Bestandskunden",
+          "Reorder- und Favoritenlogik",
+          "Bestellkalender und Standardartikel",
+          "Freigaben, Kostenstellen und Ansprechpartner",
+        ],
         functions: [
           "kundenspezifische Reorder-Strecken für wiederkehrende Firmenkunden oder feste Formate",
           "voreingestellte Bestelllogik für Standardangebote, Mengen, Intervalle oder wiederkehrende Veranstaltungsarten",
           "schnellere Nachbestellung ohne erneute Grundabfrage aller Rahmendaten",
           "bessere Planbarkeit für Office, Küche und Organisation bei regelmäßigem Bedarf",
         ],
+        featureDetails: [
+          {
+            title: "Kundenlogins für wiederkehrende Auftraggeber",
+            text: "Bestandskunden bekommen eine klar strukturierte Oberfläche, in der Ansprechpartner, frühere Bestellmuster und Standardprozesse bereits hinterlegt sind.",
+          },
+          {
+            title: "Reorder ohne erneute Grundabfrage",
+            text: "Wiederkehrende Lunches, Besprechungsservice oder Konferenzformate können mit wenigen Klicks erneut bestellt werden, statt jedes Mal per Mail neu erklärt zu werden.",
+          },
+          {
+            title: "Freigaben und Kostenstellen",
+            text: "Für größere Firmenkunden können interne Budgets, Ansprechpartner, Lieferorte oder Freigabeschritte sauber abgebildet werden, damit Panorama professioneller mit Corporate-Kunden arbeitet.",
+          },
+          {
+            title: "Planbarkeit für Küche und Organisation",
+            text: "Standardisierte Portalanfragen machen Mengen, Intervalle und Regelbestellungen früher sichtbar und erleichtern dadurch Einkauf, Produktion und Personaleinsatz.",
+          },
+        ],
         impacts: [
           "mehr Umsatz aus Bestandskunden, weil Nachbestellungen einfacher und schneller ausgelöst werden",
           "weniger Verwaltungszeit für wiederkehrende Standardanfragen",
           "stärkere Kundenbindung durch einen bequemeren und professionelleren Bestellprozess",
+        ],
+      },
+      {
+        id: "enterprise-ops-suite",
+        name: "Enterprise Operations & Super Admin Suite",
+        headline: "Teams, Einsätze, Finanzen und Verantwortlichkeiten in einer zentralen Plattform steuern",
+        subline: "Die richtige Ausbaustufe für eine große Catering-Organisation mit mehreren Auftraggebern, Teams und Entscheidern.",
+        summary:
+          "Dieses Paket verbindet Vertrieb und Auftragsannahme mit operativer Steuerung. Es schafft eine Admin-Anwendung für Mitarbeiter, Aufgaben, Einsatzplanung, Standortlogik, Managementberichte und eine Finanzsicht für Super-Admins.",
+        fit: "Für große Catering-Unternehmen, die nicht nur mehr Anfragen wollen, sondern den gesamten Auftrag bis zur operativen und kaufmännischen Steuerung digital sauber führen möchten.",
+        timeline: "8 bis 12 Wochen",
+        includedTitle: "Was Panorama konkret erhält",
+        modulesTitle: "Welche Enterprise-Module in dieser Stufe enthalten sind",
+        functionsTitle: "Welche Funktionen in dieser Stufe enthalten sind",
+        detailTitle: "Wie Mitarbeiter-, Admin- und Finanzfunktionen konkret arbeiten",
+        impactTitle: "Welcher geschäftliche Effekt entsteht",
+        cta: { label: "Enterprise-Paket besprechen", href: "/kontakt" },
+        secondaryCta: { label: "Lead-Flow als Basis ansehen", href: "/booking" },
+        deliverables: [
+          "eine Admin-Anwendung zur Steuerung von Mitarbeitern, Einsätzen, Aufgaben und operativen Übergaben",
+          "eigene Mitarbeiterseiten mit persönlichen Tasks, Einsatzdetails, Checklisten und Statusrückmeldung",
+          "eine Super-Admin-Sicht für Umsatz, offene Posten, Auftragsvolumen, Deckungsbeiträge und Freigaben",
+          "Rollen- und Rechteverwaltung für Office, Vertrieb, Betriebsleitung, Standortleitung und Geschäftsführung",
+        ],
+        modules: [
+          "Mitarbeiterverwaltung und Rollenrechte",
+          "Mitarbeiterseiten mit Tagesaufgaben und Checklisten",
+          "Einsatz- und Übergabesteuerung pro Auftrag",
+          "Super-Admin-Finanzcockpit",
+          "Standort-, Kunden- und Audit-Logik",
+        ],
+        functions: [
+          "Anlage von Mitarbeitern, Teams, Rollen, Zuständigkeiten und Einsatzprofilen in der Admin-App",
+          "eigene Übersichtsseite pro Mitarbeiter mit Aufgaben, Einsatzort, Uhrzeit, Ansprechpartner, Dokumenten und Rückmeldestatus",
+          "Zuordnung von Leads, Aufträgen und Eventdaten an operative Teams inklusive interner Tasklisten",
+          "Super-Admin-Dashboard für Umsatz nach Kunde, Standort oder Leistungsbereich sowie offene Vorgänge und Freigaben",
+          "Finanzsicht mit Auftragswert, Zusatzleistungen, Kostenrahmen, Deckungsbeitragsindikation und Exportgrundlage für Controlling oder Buchhaltung",
+        ],
+        featureDetails: [
+          {
+            title: "Mitarbeiterverwaltung in der Admin-App",
+            text: "Office oder Betriebsleitung können Mitarbeiterprofile, Rollen, Verfügbarkeiten, Einsatzarten und Zuständigkeiten zentral pflegen, statt mit verteilten Excel-Listen oder Messenger-Absprachen zu arbeiten.",
+          },
+          {
+            title: "Eigene Task-Seite für jeden Mitarbeiter",
+            text: "Jeder Mitarbeiter erhält eine persönliche Seite mit seinen aktuellen Aufgaben, Einsatzzeiten, Locations, Kundenhinweisen, Checklisten und dem Status seiner Rückmeldung. So wird aus interner Abstimmung ein klarer digitaler Arbeitsablauf.",
+          },
+          {
+            title: "Operative Übergabe vom Auftrag ins Team",
+            text: "Sobald ein Auftrag bestätigt ist, können Aufgabenpakete an Küche, Logistik, Service oder Aufbau übergeben werden. Dadurch werden Briefings, Zuständigkeiten und Deadlines direkt aus dem System heraus gesteuert.",
+          },
+          {
+            title: "Super-Admin-Finanzcockpit",
+            text: "Geschäftsführung oder zentrale Verwaltung sehen Umsatz nach Kunde, Auftragslage nach Zeitraum, offene Freigaben, Zusatzleistungen, potenzielle Deckungsbeiträge und auffällige Vorgänge in einer kompakten Managementsicht.",
+          },
+          {
+            title: "Rechte, Standorte und Nachvollziehbarkeit",
+            text: "Mehrere Standorte, Teams oder Leistungsbereiche können über Rollenrechte, Freigabestufen und Aktivitätsprotokolle sauber voneinander getrennt und trotzdem zentral ausgewertet werden.",
+          },
+        ],
+        impacts: [
+          "weniger operative Reibung zwischen Vertrieb, Office, Küche, Service und Management",
+          "mehr Transparenz für Geschäftsführung und Super-Admins über Umsatz, Verantwortung und kritische Vorgänge",
+          "professionellere Steuerung großer Kundenaufträge mit weniger Abstimmungschaos und besserer Skalierbarkeit",
         ],
       },
     ],
@@ -254,6 +434,58 @@ const panoramaSalesOffer = {
     proof: [
       "Panorama verkauft bereits komplexe Leistungen. Der Engpass liegt nicht im Angebot, sondern in der digitalen Vorqualifizierung.",
       "Die vorhandene Broschüren- und PDF-Stärke kann direkt in einen verkaufsstarken, zeitsparenden Flow übersetzt werden.",
+    ],
+  },
+  stakeholders: {
+    eyebrow: "Für jede Rolle klar verkauft",
+    title: "Warum die Lösung für Geschäftsführung, Betriebsleitung, Office und Kunden gleichzeitig Sinn ergibt",
+    intro:
+      "Größere Catering-Unternehmen kaufen selten nur eine Website. Sie investieren in Wachstum, operative Entlastung, saubere Prozesse und bessere Steuerbarkeit. Deshalb zeigen wir den Nutzen bewusst aus Sicht der wichtigsten Rollen im Unternehmen.",
+    items: [
+      {
+        role: "Für die Geschäftsführung",
+        title: "Mehr Transparenz, weniger Blindflug und eine bessere Skalierungsbasis",
+        text: "Die Geschäftsführung sieht nicht nur ein schöneres Frontend, sondern einen messbaren Vertriebs- und Operationshebel mit besserer Sicht auf Umsatz, Teams, Kunden und kritische Vorgänge.",
+        packages: "Besonders relevant: Lead- und Anfragemanagement, Enterprise Operations & Super Admin Suite",
+        bullets: [
+          "mehr qualifizierte Anfragen statt unklarer Kontaktmischung",
+          "Managementsicht auf Umsatz, Standorte, offene Vorgänge und Verantwortlichkeiten",
+          "weniger operative Reibung bei Wachstum und größeren Key Accounts",
+        ],
+      },
+      {
+        role: "Für die Betriebsleitung",
+        title: "Aufträge sauber in operative Abläufe übersetzen",
+        text: "Die Betriebsleitung profitiert davon, dass Aufträge nicht mehr nur als lose Mail oder Telefonnotiz reinkommen, sondern als strukturierte Information mit klarer Übergabe an Teams und Verantwortliche.",
+        packages: "Besonders relevant: Lead- und Anfragemanagement, Kundenportal, Enterprise Operations & Super Admin Suite",
+        bullets: [
+          "klare Vorqualifizierung vor der operativen Planung",
+          "Task- und Einsatzsteuerung pro Auftrag und Mitarbeiter",
+          "bessere Planbarkeit für Küche, Service, Logistik und Aufbau",
+        ],
+      },
+      {
+        role: "Für Office und Vertrieb",
+        title: "Weniger Rückfragen, schnellere Angebote und mehr Abschlussgeschwindigkeit",
+        text: "Office und Vertrieb sparen Zeit, weil Daten bereits vollständig ankommen, sauber priorisiert werden und direkt in einen bearbeitbaren Workflow fließen.",
+        packages: "Besonders relevant: Vertriebsseite mit Anfragefokus, Lead- und Anfragemanagement",
+        bullets: [
+          "weniger manuelle Nacharbeit bei neuen Anfragen",
+          "bessere Angebotsvorbereitung mit Status, Notizen und Routing",
+          "höhere Antwortgeschwindigkeit bei gleichzeitig professionellerem Eindruck",
+        ],
+      },
+      {
+        role: "Für Bestandskunden und Einkäufer",
+        title: "Ein professionellerer Bestellprozess für wiederkehrende Aufträge",
+        text: "Bestehende Kunden, Assistenzen oder Einkaufsabteilungen wollen schnell, klar und verlässlich bestellen. Genau dafür schafft das Portal einen sauberen digitalen Weg statt E-Mail-Schleifen.",
+        packages: "Besonders relevant: Kundenportal für Bestandskunden, Enterprise Operations & Super Admin Suite",
+        bullets: [
+          "schnellere Reorders bei standardisierten Formaten",
+          "klare Ansprechpartner, Freigaben und Kostenstellen",
+          "mehr Vertrauen in einen professionell organisierten Catering-Partner",
+        ],
+      },
     ],
   },
   addons: {
@@ -296,6 +528,26 @@ const panoramaSalesOffer = {
         name: "Photo / Video Shoot Coordination",
         price: "stärkerer Eindruck",
         text: "Partnergestützte Begleitung für besseres Bild- und Reels-Material.",
+      },
+      {
+        name: "Multi-Standort Reporting",
+        price: "mehr Managementsicht",
+        text: "Zentrale Reports für Standorte, Leistungsbereiche, Auftragsvolumen und operative Engpässe.",
+      },
+      {
+        name: "Finance Export + Controlling Layer",
+        price: "bessere Finanzsicht",
+        text: "Exportfähige Daten für Buchhaltung, Controlling, offene Posten und Deckungsbeitragsanalysen.",
+      },
+      {
+        name: "Kundenfreigaben & SLA-Workflows",
+        price: "mehr Prozesssicherheit",
+        text: "Freigabestufen, Reaktionszeiten und Zuständigkeitsregeln für größere Firmenkunden und Rahmenverträge.",
+      },
+      {
+        name: "Operatives Task-Board für Teams",
+        price: "weniger Abstimmung",
+        text: "Zusätzliche Planungsansicht für Küche, Service, Logistik und Aufbau mit klaren Tagesaufgaben.",
       },
     ],
   },

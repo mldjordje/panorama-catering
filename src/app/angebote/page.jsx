@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 export default function AngebotePage() {
-  const { hero, whyNow, missingNow, packages, roi, addons, process, nextStep, salesScript } =
+  const { hero, whyNow, missingNow, packages, roi, stakeholders, addons, process, nextStep, salesScript } =
     panoramaSalesOffer;
 
   return (
@@ -160,6 +160,16 @@ export default function AngebotePage() {
                       ))}
                     </ul>
                   </div>
+                  {item.modules?.length ? (
+                    <div className="angebote-package-block">
+                      <h4>{item.modulesTitle}</h4>
+                      <div className="angebote-package-module-list">
+                        {item.modules.map((module) => (
+                          <span key={module} className="angebote-package-module-chip">{module}</span>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
                   <div className="angebote-package-block">
                     <h4>{item.functionsTitle}</h4>
                     <ul className="angebote-check-list">
@@ -168,6 +178,19 @@ export default function AngebotePage() {
                       ))}
                     </ul>
                   </div>
+                  {item.featureDetails?.length ? (
+                    <div className="angebote-package-block">
+                      <h4>{item.detailTitle}</h4>
+                      <div className="angebote-feature-detail-list">
+                        {item.featureDetails.map((detail) => (
+                          <article key={detail.title} className="angebote-feature-detail-item">
+                            <h5>{detail.title}</h5>
+                            <p>{detail.text}</p>
+                          </article>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
                   <div className="angebote-package-block">
                     <h4>{item.impactTitle}</h4>
                     <ul className="angebote-check-list">
@@ -257,6 +280,41 @@ export default function AngebotePage() {
                     <span>{item.price}</span>
                   </div>
                   <p>{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="angebote-section angebote-section-dark">
+          <div className="pagewrap">
+            <div className="section-title" data-aos="fade-up">
+              <p>{stakeholders.eyebrow}</p>
+            </div>
+            <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="80">
+              <h2>{stakeholders.title}</h2>
+            </div>
+            <p className="angebote-section-intro is-dark" data-aos="fade-up" data-aos-delay="140">
+              {stakeholders.intro}
+            </p>
+
+            <div className="angebote-stakeholder-grid">
+              {stakeholders.items.map((item, index) => (
+                <article
+                  key={item.role}
+                  className="angebote-stakeholder-card"
+                  data-aos="fade-up"
+                  data-aos-delay={120 + index * 70}
+                >
+                  <p className="angebote-package-kicker">{item.role}</p>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                  <p className="angebote-stakeholder-packages">{item.packages}</p>
+                  <ul className="angebote-check-list">
+                    {item.bullets.map((bullet) => (
+                      <li key={bullet}>{bullet}</li>
+                    ))}
+                  </ul>
                 </article>
               ))}
             </div>
