@@ -113,7 +113,7 @@ const panoramaSalesOffer = {
     eyebrow: "Unsere Pakete",
     title: "Unser Ausbauplan für mehr Umsatz und weniger Verwaltungsaufwand",
     intro:
-      "Hier ist klar aufgeschlüsselt, was Panorama in jeder Stufe konkret erhält, welche Module enthalten sind, wie die Funktionen im Alltag arbeiten und welcher geschäftliche Effekt entsteht. Der Einstieg bleibt bewusst einfach: Der neue Landingpage-Pilot ist bereits vorbereitet, wird kostenlos auf Panorama angepasst und kann auf dem Hauptdomain veröffentlicht werden. Danach kann Panorama bis zu einer vollständigen Vertriebs-, Operations- und Managementplattform ausgebaut werden.",
+      "Jede Stufe zeigt klar, was Panorama konkret bekommt, welches Problem damit verschwindet und wie stark der Effekt im Alltag ist. Statt abstrakter Digitalbegriffe geht es um mehr passende Anfragen, schnellere Angebote, weniger Abstimmung, sauberere Prozesse und bessere Steuerbarkeit.",
     items: [
       {
         id: "free-relaunch",
@@ -127,7 +127,8 @@ const panoramaSalesOffer = {
         includedTitle: "Was Panorama konkret erhält",
         modulesTitle: "Welche Module in dieser Stufe sichtbar sind",
         functionsTitle: "Welche Funktionen in dieser Stufe enthalten sind",
-        detailTitle: "Wie die Funktionen konkret arbeiten",
+        detailTitle: "Was Panorama konkret bekommt und wie es genutzt wird",
+        problemsTitle: "Welche Probleme dieses Paket sofort löst",
         impactTitle: "Welcher geschäftliche Effekt entsteht",
         cta: { label: "Kostenlosen Pilot anfragen", href: "/kontakt" },
         secondaryCta: { label: "Event-Anfrage als Beispiel ansehen", href: "/booking" },
@@ -167,6 +168,11 @@ const panoramaSalesOffer = {
             text: "Buttons, Kontaktmodule und Seitenaufbau werden so angeordnet, dass Einkaufsleiter, Assistenz oder Eventverantwortliche auch mobil schnell reagieren können.",
           },
         ],
+        problems: [
+          "Die Startseite wirkt nicht mehr wie eine alte Informationsseite, sondern wie ein professioneller erster Verkaufskontakt.",
+          "Interessenten sehen schneller, welche Leistungen Panorama anbietet und für wen sie gedacht sind.",
+          "Die Kontaktaufnahme wird einfacher, weil klare Kontaktgründe und nächste Schritte sichtbar sind.",
+        ],
         impacts: [
           "Panorama wirkt im ersten Kontakt moderner, klarer und hochwertiger",
           "mehr Besucher verstehen schneller, warum sie direkt anfragen sollten",
@@ -185,7 +191,8 @@ const panoramaSalesOffer = {
         includedTitle: "Was Panorama konkret erhält",
         modulesTitle: "Welche Module in dieser Stufe enthalten sind",
         functionsTitle: "Welche Funktionen in dieser Stufe enthalten sind",
-        detailTitle: "Wie die Vertriebsfunktionen im Alltag arbeiten",
+        detailTitle: "Was Panorama konkret bekommt und wie der Vertrieb entlastet wird",
+        problemsTitle: "Welche Probleme dieses Paket konkret löst",
         impactTitle: "Welcher geschäftliche Effekt entsteht",
         cta: { label: "Vertriebspaket besprechen", href: "/kontakt" },
         secondaryCta: { label: "Beispiel für Catering-Anfrage öffnen", href: "/booking" },
@@ -225,6 +232,11 @@ const panoramaSalesOffer = {
             text: "Panorama bekommt die Grundlage, um Inhalte, Seitenaufrufe, CTA-Klicks und Anfragen später datenbasiert weiterzuentwickeln statt nur nach Bauchgefühl.",
           },
         ],
+        problems: [
+          "Die Website verliert weniger Besucher, weil Zielgruppen schneller in die passende Anfrage geführt werden.",
+          "Vertrieb und Office bekommen weniger unklare Erstkontakte ohne Anlass, Umfang oder Terminrahmen.",
+          "Panorama muss seine Leistungen nicht mehr nur über PDFs oder allgemeine Infoseiten verkaufen.",
+        ],
         impacts: [
           "mehr qualifizierte Erstgespräche, weil Besucher schneller verstehen, wofür Panorama die richtige Wahl ist",
           "weniger Streuverlust durch klarere Ansprache und weniger allgemeine oder unpassende Rückfragen",
@@ -243,7 +255,8 @@ const panoramaSalesOffer = {
         includedTitle: "Was Panorama konkret erhält",
         modulesTitle: "Welche Module in dieser Stufe enthalten sind",
         functionsTitle: "Welche Funktionen in dieser Stufe enthalten sind",
-        detailTitle: "Wie die Lead- und Admin-Funktionen konkret arbeiten",
+        detailTitle: "Was Panorama konkret bekommt und wo Zeit im Office gespart wird",
+        problemsTitle: "Welche Probleme dieses Paket konkret löst",
         impactTitle: "Welcher geschäftliche Effekt entsteht",
         featured: true,
         cta: { label: "Booking-Demo live zeigen", href: "/booking" },
@@ -289,6 +302,11 @@ const panoramaSalesOffer = {
             text: "Panorama kann unterschiedliche Varianten für Firmenveranstaltungen, Lunch-Konzepte, Schulverpflegung oder Sonderproduktionen nutzen, ohne jedes Mal denselben unpassenden Standardprozess zu verwenden.",
           },
         ],
+        problems: [
+          "Anfragen kommen nicht mehr unvollständig herein und müssen nicht mühsam nachtelefoniert werden.",
+          "Office und Vertrieb verlieren weniger Zeit beim Sortieren, Priorisieren und Weiterleiten von Leads.",
+          "Angebote können schneller erstellt werden, weil die relevanten Informationen bereits strukturiert vorliegen.",
+        ],
         impacts: [
           "mehr qualifizierte Anfragen, weil die wichtigsten Informationen schon beim ersten Kontakt vorliegen",
           "weniger verlorene Zeit durch Rückfragen, Nachtelefonieren und manuelle Sortierung von Anfragen",
@@ -307,7 +325,8 @@ const panoramaSalesOffer = {
         includedTitle: "Was Panorama konkret erhält",
         modulesTitle: "Welche Module in dieser Stufe enthalten sind",
         functionsTitle: "Welche Funktionen in dieser Stufe enthalten sind",
-        detailTitle: "Wie das Portal im Bestellalltag arbeitet",
+        detailTitle: "Was Panorama konkret bekommt und wie Bestandskunden einfacher bestellen",
+        problemsTitle: "Welche Probleme dieses Paket konkret löst",
         impactTitle: "Welcher geschäftliche Effekt entsteht",
         cta: { label: "Phase 2 vormerken", href: "/kontakt" },
         secondaryCta: { label: "Vorher die Anfrage-Demo ansehen", href: "/booking" },
@@ -347,6 +366,11 @@ const panoramaSalesOffer = {
             text: "Standardisierte Portalanfragen machen Mengen, Intervalle und Regelbestellungen früher sichtbar und erleichtern dadurch Einkauf, Produktion und Personaleinsatz.",
           },
         ],
+        problems: [
+          "Wiederkehrende Kunden müssen Bestellungen nicht jedes Mal neu per E-Mail erklären.",
+          "Panorama spart Rückfragen bei Standardbestellungen, Ansprechpartnern und Freigaben.",
+          "Regelaufträge werden früher sichtbar und sind für Küche, Einkauf und Logistik besser planbar.",
+        ],
         impacts: [
           "mehr Umsatz aus Bestandskunden, weil Nachbestellungen einfacher und schneller ausgelöst werden",
           "weniger Verwaltungszeit für wiederkehrende Standardanfragen",
@@ -365,7 +389,8 @@ const panoramaSalesOffer = {
         includedTitle: "Was Panorama konkret erhält",
         modulesTitle: "Welche Enterprise-Module in dieser Stufe enthalten sind",
         functionsTitle: "Welche Funktionen in dieser Stufe enthalten sind",
-        detailTitle: "Wie Mitarbeiter-, Admin- und Finanzfunktionen konkret arbeiten",
+        detailTitle: "Was Panorama konkret bekommt und wo Management und Teams entlastet werden",
+        problemsTitle: "Welche Probleme dieses Paket konkret löst",
         impactTitle: "Welcher geschäftliche Effekt entsteht",
         cta: { label: "Enterprise-Paket besprechen", href: "/kontakt" },
         secondaryCta: { label: "Lead-Flow als Basis ansehen", href: "/booking" },
@@ -410,6 +435,11 @@ const panoramaSalesOffer = {
             title: "Rechte, Standorte und Nachvollziehbarkeit",
             text: "Mehrere Standorte, Teams oder Leistungsbereiche können über Rollenrechte, Freigabestufen und Aktivitätsprotokolle sauber voneinander getrennt und trotzdem zentral ausgewertet werden.",
           },
+        ],
+        problems: [
+          "Mitarbeiter, Aufgaben und Einsätze müssen nicht mehr über Excel, Telefonketten oder Messenger koordiniert werden.",
+          "Betriebsleitung und Geschäftsführung sehen kritische Vorgänge, Verantwortlichkeiten und Finanzen zentral statt verteilt.",
+          "Große Kundenaufträge lassen sich sauberer übergeben, dokumentieren und nachverfolgen.",
         ],
         impacts: [
           "weniger operative Reibung zwischen Vertrieb, Office, Küche, Service und Management",

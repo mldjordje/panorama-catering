@@ -191,6 +191,16 @@ export default function AngebotePage() {
                       </div>
                     </div>
                   ) : null}
+                  {item.problems?.length ? (
+                    <div className="angebote-package-block">
+                      <h4>{item.problemsTitle}</h4>
+                      <ul className="angebote-check-list">
+                        {item.problems.map((problem) => (
+                          <li key={problem}>{problem}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
                   <div className="angebote-package-block">
                     <h4>{item.impactTitle}</h4>
                     <ul className="angebote-check-list">

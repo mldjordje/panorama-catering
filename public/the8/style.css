@@ -3188,6 +3188,21 @@ h1 em{font-size: 82px;}
 /* Panorama package sales demo */
 .angebote-page {
     background: #050505;
+    overflow-x: clip;
+}
+
+.angebote-page .pagewrap,
+.angebote-hero-grid > *,
+.angebote-hero-proof > *,
+.angebote-audit-grid > *,
+.angebote-gap-grid > *,
+.angebote-package-grid > *,
+.angebote-addon-grid > *,
+.angebote-stakeholder-grid > *,
+.angebote-process-grid > *,
+.angebote-roi-grid > *,
+.angebote-next-grid > * {
+    min-width: 0;
 }
 
 .angebote-hero {
@@ -3207,6 +3222,27 @@ h1 em{font-size: 82px;}
 .angebote-hero-copy h1 {
     color: #fff;
     max-width: 900px;
+}
+
+.angebote-hero-copy h1,
+.angebote-section .section-bigtitle h2,
+.angebote-package-head h3,
+.angebote-retainer-card h3,
+.angebote-roi-card h3,
+.angebote-stakeholder-card h3,
+.angebote-next-card h3,
+.angebote-script-card h3,
+.angebote-package-head span,
+.angebote-section-intro,
+.angebote-package-card p,
+.angebote-stakeholder-card p,
+.angebote-feature-detail-item p,
+.angebote-source-list a,
+.angebote-package-module-chip,
+.angebote-stakeholder-packages,
+.angebote-check-list li {
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .angebote-hero-subtitle {
@@ -3233,6 +3269,7 @@ h1 em{font-size: 82px;}
     font-size: 13px;
     line-height: 16px;
     background: rgba(255, 255, 255, 0.05);
+    max-width: 100%;
 }
 
 .angebote-hero-actions {
@@ -3497,6 +3534,7 @@ h1 em{font-size: 82px;}
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    max-width: 100%;
 }
 
 .angebote-package-block h4 {
@@ -3613,6 +3651,7 @@ h1 em{font-size: 82px;}
     display: flex;
     justify-content: space-between;
     gap: 16px;
+    flex-wrap: wrap;
     align-items: start;
 }
 
@@ -3664,10 +3703,72 @@ h1 em{font-size: 82px;}
     max-width: none;
 }
 
+.angebote-hero-actions .button {
+    height: auto;
+}
+
+.angebote-package-actions .button,
+.angebote-next-actions .button,
+.angebote-hero-actions .button {
+    min-width: 0;
+}
+
 .angebote-script-step + .angebote-script-step {
     margin-top: 14px;
     padding-top: 14px;
     border-top: 1px solid #262626;
+}
+
+@media screen and (max-width:540px) {
+    .angebote-hero {
+        padding: 132px 0px 56px 0px;
+    }
+
+    .angebote-section {
+        padding: 64px 0px;
+    }
+
+    .angebote-hero-copy h1 {
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    .angebote-section .section-bigtitle h2 {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .angebote-package-head h3,
+    .angebote-retainer-card h3,
+    .angebote-roi-card h3,
+    .angebote-stakeholder-card h3,
+    .angebote-next-card h3,
+    .angebote-script-card h3 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .angebote-package-card,
+    .angebote-gap-card,
+    .angebote-roi-card,
+    .angebote-stakeholder-card,
+    .angebote-process-card,
+    .angebote-script-card,
+    .angebote-next-card,
+    .angebote-addon-card,
+    .angebote-retainer-card,
+    .angebote-source-box,
+    .angebote-audit-card {
+        padding: 16px;
+    }
+
+    .angebote-package-actions .button,
+    .angebote-next-actions .button,
+    .angebote-hero-actions .button {
+        min-height: 54px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 @media screen and (min-width:720px) {
