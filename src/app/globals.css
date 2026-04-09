@@ -1215,3 +1215,310 @@ body {
 .sb-admin-booking.is-disabled .sb-toggle-label {
   color: #6b6b6b;
 }
+
+/* Panorama Angebot page */
+.angebote-page {
+  background: var(--madera-bg);
+  color: var(--madera-text);
+}
+
+.angebote-hero {
+  padding: 150px 0 90px;
+  background: linear-gradient(135deg, #f9f5ef 0%, #efe7dc 55%, rgba(210, 180, 140, 0.24) 100%);
+}
+
+.angebote-section {
+  padding: 80px 0;
+}
+
+.angebote-section-light {
+  background: var(--madera-surface);
+}
+
+.angebote-section-dark {
+  background: #1d1a18;
+  color: #f6f1ea;
+}
+
+.angebote-hero-grid,
+.angebote-next-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.angebote-hero-copy h1,
+.angebote-section h2 {
+  line-height: 1.08;
+}
+
+.angebote-hero-subtitle,
+.angebote-section-intro,
+.angebote-package-summary,
+.angebote-package-fit,
+.angebote-hero-proof-card p,
+.angebote-audit-card p,
+.angebote-process-card p,
+.angebote-script-intro {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.angebote-section-intro,
+.angebote-package-summary,
+.angebote-package-fit,
+.angebote-audit-card p,
+.angebote-process-card p,
+.angebote-script-intro {
+  color: var(--madera-text-muted);
+}
+
+.angebote-section-intro.is-dark,
+.angebote-section-dark .angebote-package-summary,
+.angebote-section-dark .angebote-package-fit,
+.angebote-section-dark .angebote-process-card p,
+.angebote-section-dark .angebote-script-intro {
+  color: rgba(246, 241, 234, 0.78);
+}
+
+.angebote-badge-row,
+.angebote-package-actions,
+.angebote-next-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.angebote-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(16, 16, 16, 0.08);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.angebote-hero-actions {
+  margin-top: 28px;
+}
+
+.angebote-hero-proof {
+  display: grid;
+  gap: 18px;
+}
+
+.angebote-hero-proof-card,
+.angebote-audit-card,
+.angebote-package-card,
+.angebote-process-card,
+.angebote-next-card,
+.angebote-script-card {
+  border-radius: 22px;
+  box-shadow: 0 24px 60px rgba(43, 26, 18, 0.08);
+}
+
+.angebote-hero-proof-card,
+.angebote-audit-card,
+.angebote-process-card,
+.angebote-next-card,
+.angebote-script-card {
+  padding: 26px;
+  background: #fff;
+}
+
+.angebote-section-dark .angebote-process-card,
+.angebote-section-dark .angebote-next-card,
+.angebote-section-dark .angebote-script-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.angebote-hero-proof-card h3,
+.angebote-audit-card h4,
+.angebote-package-card h3,
+.angebote-process-card h4,
+.angebote-next-card h3,
+.angebote-script-card h3 {
+  margin-bottom: 10px;
+}
+
+.angebote-hero-visual {
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 24px 60px rgba(43, 26, 18, 0.14);
+}
+
+.angebote-hero-visual img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.angebote-audit-grid,
+.angebote-package-grid,
+.angebote-process-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.angebote-audit-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.angebote-package-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 28px;
+}
+
+.angebote-process-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 28px;
+}
+
+.angebote-package-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 30px;
+  background: #fff;
+  color: var(--madera-text);
+  border: 1px solid rgba(16, 16, 16, 0.06);
+  height: 100%;
+}
+
+.angebote-package-card.is-featured {
+  border: 2px solid var(--madera-accent);
+  transform: translateY(-8px);
+  box-shadow: 0 28px 70px rgba(210, 180, 140, 0.18);
+}
+
+.angebote-package-kicker {
+  margin-bottom: 8px;
+  color: #8f7355;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.angebote-package-head span,
+.angebote-package-price-note,
+.angebote-package-footnote {
+  color: var(--madera-text-muted);
+}
+
+.angebote-package-price-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 18px;
+  border-radius: 18px;
+  background: var(--madera-surface-alt);
+}
+
+.angebote-package-price {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.angebote-package-block {
+  padding-top: 18px;
+  border-top: 1px solid rgba(16, 16, 16, 0.08);
+}
+
+.angebote-check-list {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 10px;
+  line-height: 1.6;
+}
+
+.angebote-process-card span {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(210, 180, 140, 0.18);
+  color: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.angebote-package-footnote {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1199px) {
+  .angebote-audit-grid,
+  .angebote-package-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .angebote-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 991px) {
+  .angebote-hero-grid,
+  .angebote-next-grid,
+  .angebote-audit-grid,
+  .angebote-package-grid,
+  .angebote-process-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .angebote-hero {
+    padding: 130px 0 70px;
+  }
+
+  .angebote-section {
+    padding: 64px 0;
+  }
+
+  .angebote-package-card.is-featured {
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .angebote-hero-subtitle,
+  .angebote-section-intro,
+  .angebote-package-summary,
+  .angebote-package-fit,
+  .angebote-hero-proof-card p,
+  .angebote-audit-card p,
+  .angebote-process-card p,
+  .angebote-script-intro {
+    font-size: 15px;
+  }
+
+  .angebote-package-card,
+  .angebote-hero-proof-card,
+  .angebote-audit-card,
+  .angebote-process-card,
+  .angebote-next-card,
+  .angebote-script-card {
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .angebote-package-price {
+    font-size: 28px;
+  }
+}

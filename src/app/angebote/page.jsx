@@ -8,8 +8,7 @@ export const metadata = {
 };
 
 export default function AngebotePage() {
-  const { hero, whyNow, missingNow, packages, roi, stakeholders, addons, process, nextStep, salesScript } =
-    panoramaSalesOffer;
+  const { hero, offerSummary, packages, process, nextStep } = panoramaSalesOffer;
 
   return (
     <>
@@ -35,7 +34,7 @@ export default function AngebotePage() {
                 <div className="panorama-hero-actions angebote-hero-actions" data-aos="fade-up" data-aos-delay="240">
                   <a href={hero.primaryCta.href} className="button white">{hero.primaryCta.label}</a>
                   <a href={hero.secondaryCta.href} className="button white">{hero.secondaryCta.label}</a>
-                  <a href={hero.tertiaryCta.href} className="button white">{hero.tertiaryCta.label}</a>
+                  <a href={hero.tertiaryCta.href} className="button">{hero.tertiaryCta.label}</a>
                 </div>
               </div>
 
@@ -52,7 +51,7 @@ export default function AngebotePage() {
                   </article>
                 ))}
                 <figure className="angebote-hero-visual" data-aos="zoom-in" data-aos-delay="260">
-                  <img src="/panorama/pc-home-01.jpg" alt="Panorama Catering Angebotspakete" />
+                  <img src="/panorama/pc-home-01.jpg" alt="Panorama Catering Angebotsübersicht" />
                 </figure>
               </div>
             </div>
@@ -62,17 +61,17 @@ export default function AngebotePage() {
         <section className="angebote-section angebote-section-light">
           <div className="pagewrap">
             <div className="section-title" data-aos="fade-up">
-              <p>{whyNow.eyebrow}</p>
+              <p>{offerSummary.eyebrow}</p>
             </div>
             <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="80">
-              <h2>{whyNow.title}</h2>
+              <h2>{offerSummary.title}</h2>
             </div>
             <p className="angebote-section-intro" data-aos="fade-up" data-aos-delay="140">
-              {whyNow.intro}
+              {offerSummary.intro}
             </p>
 
             <div className="angebote-audit-grid">
-              {whyNow.auditCards.map((card, index) => (
+              {offerSummary.cards.map((card, index) => (
                 <article
                   key={card.title}
                   className="angebote-audit-card"
@@ -80,21 +79,9 @@ export default function AngebotePage() {
                   data-aos-delay={120 + index * 70}
                 >
                   <h4>{card.title}</h4>
-                  <p><strong>Heute:</strong> {card.before}</p>
-                  <p><strong>Mit uns:</strong> {card.after}</p>
+                  <p>{card.text}</p>
                 </article>
               ))}
-            </div>
-
-            <div className="angebote-source-box" data-aos="fade-up" data-aos-delay="220">
-              <h4>{whyNow.evidenceTitle}</h4>
-              <ul className="angebote-source-list">
-                {whyNow.evidence.map((item) => (
-                  <li key={item.href}>
-                    <a href={item.href} target="_blank" rel="noreferrer">{item.label}</a>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </section>
@@ -102,37 +89,12 @@ export default function AngebotePage() {
         <section className="angebote-section angebote-section-dark">
           <div className="pagewrap">
             <div className="section-title" data-aos="fade-up">
-              <p>{missingNow.eyebrow}</p>
-            </div>
-            <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="80">
-              <h2>{missingNow.title}</h2>
-            </div>
-
-            <div className="angebote-gap-grid">
-              {missingNow.items.map((item, index) => (
-                <article
-                  key={item.title}
-                  className="angebote-gap-card"
-                  data-aos="fade-up"
-                  data-aos-delay={120 + index * 60}
-                >
-                  <h4>{item.title}</h4>
-                  <p>{item.text}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="angebote-section angebote-section-light">
-          <div className="pagewrap">
-            <div className="section-title" data-aos="fade-up">
               <p>{packages.eyebrow}</p>
             </div>
             <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="80">
               <h2>{packages.title}</h2>
             </div>
-            <p className="angebote-section-intro" data-aos="fade-up" data-aos-delay="140">
+            <p className="angebote-section-intro is-dark" data-aos="fade-up" data-aos-delay="140">
               {packages.intro}
             </p>
 
@@ -149,189 +111,49 @@ export default function AngebotePage() {
                     <h3>{item.headline}</h3>
                     <span>{item.subline}</span>
                   </div>
+
+                  <div className="angebote-package-price-row">
+                    <p className="angebote-package-price">{item.price}</p>
+                    <span className="angebote-package-price-note">{item.priceNote}</span>
+                  </div>
+
                   <p className="angebote-package-summary">{item.summary}</p>
-                  <p className="angebote-package-fit"><strong>F\u00fcr wen geeignet:</strong> {item.fit}</p>
+                  <p className="angebote-package-fit"><strong>Geeignet für:</strong> {item.fit}</p>
                   <p className="angebote-package-fit"><strong>Zeitrahmen:</strong> {item.timeline}</p>
+
                   <div className="angebote-package-block">
-                    <h4>{item.includedTitle}</h4>
+                    <h4>{item.deliverablesTitle}</h4>
                     <ul className="angebote-check-list">
                       {item.deliverables.map((deliverable) => (
                         <li key={deliverable}>{deliverable}</li>
                       ))}
                     </ul>
                   </div>
-                  {item.modules?.length ? (
-                    <div className="angebote-package-block">
-                      <h4>{item.modulesTitle}</h4>
-                      <div className="angebote-package-module-list">
-                        {item.modules.map((module) => (
-                          <span key={module} className="angebote-package-module-chip">{module}</span>
-                        ))}
-                      </div>
-                    </div>
-                  ) : null}
+
                   <div className="angebote-package-block">
-                    <h4>{item.functionsTitle}</h4>
+                    <h4>{item.resultsTitle}</h4>
                     <ul className="angebote-check-list">
-                      {item.functions.map((feature) => (
-                        <li key={feature}>{feature}</li>
+                      {item.results.map((result) => (
+                        <li key={result}>{result}</li>
                       ))}
                     </ul>
                   </div>
-                  {item.featureDetails?.length ? (
-                    <div className="angebote-package-block">
-                      <h4>{item.detailTitle}</h4>
-                      <div className="angebote-feature-detail-list">
-                        {item.featureDetails.map((detail) => (
-                          <article key={detail.title} className="angebote-feature-detail-item">
-                            <h5>{detail.title}</h5>
-                            <p>{detail.text}</p>
-                          </article>
-                        ))}
-                      </div>
-                    </div>
-                  ) : null}
-                  {item.problems?.length ? (
-                    <div className="angebote-package-block">
-                      <h4>{item.problemsTitle}</h4>
-                      <ul className="angebote-check-list">
-                        {item.problems.map((problem) => (
-                          <li key={problem}>{problem}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ) : null}
-                  <div className="angebote-package-block">
-                    <h4>{item.impactTitle}</h4>
-                    <ul className="angebote-check-list">
-                      {item.impacts.map((impact) => (
-                        <li key={impact}>{impact}</li>
-                      ))}
-                    </ul>
-                  </div>
+
                   <div className="angebote-package-actions">
                     <a href={item.cta.href} className="button white">{item.cta.label}</a>
-                    {item.secondaryCta ? (
-                      <a href={item.secondaryCta.href} className="button">{item.secondaryCta.label}</a>
-                    ) : null}
+                    <a href={item.secondaryCta.href} className="button">{item.secondaryCta.label}</a>
                   </div>
                 </article>
               ))}
             </div>
-          </div>
-        </section>
 
-        <section className="angebote-section angebote-section-dark">
-          <div className="pagewrap">
-            <div className="section-title" data-aos="fade-up">
-              <p>{roi.eyebrow}</p>
-            </div>
-            <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="80">
-              <h2>{roi.title}</h2>
-            </div>
-            <p className="angebote-section-intro is-dark" data-aos="fade-up" data-aos-delay="140">
-              {roi.intro}
+            <p className="angebote-package-footnote" data-aos="fade-up" data-aos-delay="260">
+              {packages.footnote}
             </p>
-
-            <div className="angebote-roi-grid">
-              <article className="angebote-roi-card is-highlight" data-aos="fade-right" data-aos-delay="180">
-                <p className="angebote-package-kicker">Lead &amp; Booking Pro</p>
-                <h3>{roi.spotlightTitle}</h3>
-                <ul className="angebote-check-list">
-                  {roi.bullets.map((bullet) => (
-                    <li key={bullet}>{bullet}</li>
-                  ))}
-                </ul>
-                <a href="/booking" className="button white">Anfrage-Flow live zeigen</a>
-              </article>
-
-              <div className="angebote-roi-proof">
-                {roi.proof.map((item, index) => (
-                  <article
-                    key={item}
-                    className="angebote-roi-card"
-                    data-aos="fade-left"
-                    data-aos-delay={200 + index * 80}
-                  >
-                    <p>{item}</p>
-                  </article>
-                ))}
-              </div>
-            </div>
           </div>
         </section>
 
         <section className="angebote-section angebote-section-light">
-          <div className="pagewrap">
-            <div className="section-title" data-aos="fade-up">
-              <p>{addons.eyebrow}</p>
-            </div>
-            <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="80">
-              <h2>{addons.title}</h2>
-            </div>
-
-            <div className="angebote-retainer-card" data-aos="fade-up" data-aos-delay="120">
-              <p className="angebote-package-kicker">{addons.growthRetainer.name}</p>
-              <h3>{addons.growthRetainer.price}</h3>
-              <span>{addons.growthRetainer.discount}</span>
-              <p>{addons.growthRetainer.text}</p>
-            </div>
-
-            <div className="angebote-addon-grid">
-              {addons.items.map((item, index) => (
-                <article
-                  key={item.name}
-                  className="angebote-addon-card"
-                  data-aos="fade-up"
-                  data-aos-delay={140 + index * 60}
-                >
-                  <div className="angebote-addon-head">
-                    <h4>{item.name}</h4>
-                    <span>{item.price}</span>
-                  </div>
-                  <p>{item.text}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="angebote-section angebote-section-dark">
-          <div className="pagewrap">
-            <div className="section-title" data-aos="fade-up">
-              <p>{stakeholders.eyebrow}</p>
-            </div>
-            <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="80">
-              <h2>{stakeholders.title}</h2>
-            </div>
-            <p className="angebote-section-intro is-dark" data-aos="fade-up" data-aos-delay="140">
-              {stakeholders.intro}
-            </p>
-
-            <div className="angebote-stakeholder-grid">
-              {stakeholders.items.map((item, index) => (
-                <article
-                  key={item.role}
-                  className="angebote-stakeholder-card"
-                  data-aos="fade-up"
-                  data-aos-delay={120 + index * 70}
-                >
-                  <p className="angebote-package-kicker">{item.role}</p>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                  <p className="angebote-stakeholder-packages">{item.packages}</p>
-                  <ul className="angebote-check-list">
-                    {item.bullets.map((bullet) => (
-                      <li key={bullet}>{bullet}</li>
-                    ))}
-                  </ul>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="angebote-section angebote-section-dark">
           <div className="pagewrap">
             <div className="section-title" data-aos="fade-up">
               <p>{process.eyebrow}</p>
@@ -357,7 +179,7 @@ export default function AngebotePage() {
           </div>
         </section>
 
-        <section className="angebote-section angebote-section-light">
+        <section className="angebote-section angebote-section-dark">
           <div className="pagewrap">
             <div className="section-title" data-aos="fade-up">
               <p>{nextStep.eyebrow}</p>
@@ -365,13 +187,13 @@ export default function AngebotePage() {
             <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="80">
               <h2>{nextStep.title}</h2>
             </div>
-            <p className="angebote-section-intro" data-aos="fade-up" data-aos-delay="140">
+            <p className="angebote-section-intro is-dark" data-aos="fade-up" data-aos-delay="140">
               {nextStep.text}
             </p>
 
             <div className="angebote-next-grid">
               <article className="angebote-next-card" data-aos="fade-right" data-aos-delay="180">
-                <h3>{"Empfohlener n\u00e4chster Schritt"}</h3>
+                <h3>Empfohlener nächster Schritt</h3>
                 <ul className="angebote-check-list">
                   {nextStep.pilotPoints.map((point) => (
                     <li key={point}>{point}</li>
@@ -385,17 +207,14 @@ export default function AngebotePage() {
               </article>
 
               <article className="angebote-script-card" data-aos="fade-left" data-aos-delay="220">
-                <p className="angebote-package-kicker">{"Gespr\u00e4chsleitfaden"}</p>
-                <h3>{salesScript.title}</h3>
-                <p className="angebote-script-intro">{salesScript.intro}</p>
-                <div className="angebote-script-steps">
-                  {salesScript.steps.map((item) => (
-                    <div key={item.kicker} className="angebote-script-step">
-                      <h4>{item.kicker}</h4>
-                      <p>{item.text}</p>
-                    </div>
+                <p className="angebote-package-kicker">Sicherheit im Einstieg</p>
+                <h3>{nextStep.reassuranceTitle}</h3>
+                <p className="angebote-script-intro">{nextStep.reassuranceText}</p>
+                <ul className="angebote-check-list">
+                  {nextStep.reassurancePoints.map((point) => (
+                    <li key={point}>{point}</li>
                   ))}
-                </div>
+                </ul>
               </article>
             </div>
           </div>
