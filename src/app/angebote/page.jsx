@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 export default function AngebotePage() {
-  const { hero, offerSummary, packages, process, nextStep } = panoramaSalesOffer;
+  const { hero, packages, techStack, appOptions, process, nextStep } = panoramaSalesOffer;
 
   return (
     <>
@@ -58,34 +58,6 @@ export default function AngebotePage() {
           </div>
         </section>
 
-        <section className="angebote-section angebote-section-light">
-          <div className="pagewrap">
-            <div className="section-title" data-aos="fade-up">
-              <p>{offerSummary.eyebrow}</p>
-            </div>
-            <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="80">
-              <h2>{offerSummary.title}</h2>
-            </div>
-            <p className="angebote-section-intro" data-aos="fade-up" data-aos-delay="140">
-              {offerSummary.intro}
-            </p>
-
-            <div className="angebote-audit-grid">
-              {offerSummary.cards.map((card, index) => (
-                <article
-                  key={card.title}
-                  className="angebote-audit-card"
-                  data-aos="fade-up"
-                  data-aos-delay={120 + index * 70}
-                >
-                  <h4>{card.title}</h4>
-                  <p>{card.text}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section className="angebote-section angebote-section-dark">
           <div className="pagewrap">
             <div className="section-title" data-aos="fade-up">
@@ -121,23 +93,16 @@ export default function AngebotePage() {
                   <p className="angebote-package-fit"><strong>Geeignet für:</strong> {item.fit}</p>
                   <p className="angebote-package-fit"><strong>Zeitrahmen:</strong> {item.timeline}</p>
 
-                  <div className="angebote-package-block">
-                    <h4>{item.deliverablesTitle}</h4>
-                    <ul className="angebote-check-list">
-                      {item.deliverables.map((deliverable) => (
-                        <li key={deliverable}>{deliverable}</li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="angebote-package-block">
-                    <h4>{item.resultsTitle}</h4>
-                    <ul className="angebote-check-list">
-                      {item.results.map((result) => (
-                        <li key={result}>{result}</li>
-                      ))}
-                    </ul>
-                  </div>
+                  {item.sections.map((section) => (
+                    <div key={section.title} className="angebote-package-block">
+                      <h4>{section.title}</h4>
+                      <ul className="angebote-check-list">
+                        {section.items.map((entry) => (
+                          <li key={entry}>{entry}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
 
                   <div className="angebote-package-actions">
                     <a href={item.cta.href} className="button white">{item.cta.label}</a>
@@ -150,6 +115,62 @@ export default function AngebotePage() {
             <p className="angebote-package-footnote" data-aos="fade-up" data-aos-delay="260">
               {packages.footnote}
             </p>
+          </div>
+        </section>
+
+        <section className="angebote-section angebote-section-light">
+          <div className="pagewrap">
+            <div className="section-title" data-aos="fade-up">
+              <p>{techStack.eyebrow}</p>
+            </div>
+            <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="80">
+              <h2>{techStack.title}</h2>
+            </div>
+            <p className="angebote-section-intro" data-aos="fade-up" data-aos-delay="140">
+              {techStack.intro}
+            </p>
+
+            <div className="angebote-audit-grid">
+              {techStack.cards.map((card, index) => (
+                <article
+                  key={card.title}
+                  className="angebote-audit-card"
+                  data-aos="fade-up"
+                  data-aos-delay={120 + index * 60}
+                >
+                  <h4>{card.title}</h4>
+                  <p>{card.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="angebote-section angebote-section-light angebote-section-topless">
+          <div className="pagewrap">
+            <div className="section-title" data-aos="fade-up">
+              <p>{appOptions.eyebrow}</p>
+            </div>
+            <div className="section-bigtitle" data-aos="fade-up" data-aos-delay="80">
+              <h2>{appOptions.title}</h2>
+            </div>
+            <p className="angebote-section-intro" data-aos="fade-up" data-aos-delay="140">
+              {appOptions.intro}
+            </p>
+
+            <div className="angebote-audit-grid">
+              {appOptions.cards.map((card, index) => (
+                <article
+                  key={card.title}
+                  className="angebote-audit-card"
+                  data-aos="fade-up"
+                  data-aos-delay={120 + index * 60}
+                >
+                  <h4>{card.title}</h4>
+                  <p>{card.text}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -207,7 +228,7 @@ export default function AngebotePage() {
               </article>
 
               <article className="angebote-script-card" data-aos="fade-left" data-aos-delay="220">
-                <p className="angebote-package-kicker">Sicherheit im Einstieg</p>
+                <p className="angebote-package-kicker">Roadmap-Logik</p>
                 <h3>{nextStep.reassuranceTitle}</h3>
                 <p className="angebote-script-intro">{nextStep.reassuranceText}</p>
                 <ul className="angebote-check-list">
