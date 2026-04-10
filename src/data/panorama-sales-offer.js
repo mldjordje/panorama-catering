@@ -42,7 +42,7 @@ const panoramaSalesOffer = {
         summary:
           "Dieses Paket liefert Panorama eine moderne öffentliche Basis, auf der alle späteren Vertriebs- und Systemfunktionen sauber aufbauen können.",
         fit: "Ideal als schneller Einstieg und als sichtbarer erster Schritt für Panorama.",
-        timeline: "wenige Arbeitstage",
+        timeline: "ca. 1 bis 2 Wochen",
         featured: false,
         sections: [
           {
@@ -80,12 +80,12 @@ const panoramaSalesOffer = {
         name: "Paket 2",
         headline: "Vertrieb, CMS und CRM",
         subline: "Die empfohlene erste Ausbaustufe für mehr qualifizierte Anfragen und klare Lead-Bearbeitung.",
-        price: "ab 4.900 €",
+        price: "ab 3.200 €",
         priceNote: "einmalig, je nach Umfang",
         summary:
           "Dieses Paket erweitert die neue Website um ein bearbeitbares CMS, einen geführten Anfrageprozess und ein CRM-Panel für Office und Vertrieb.",
         fit: "Ideal, wenn Panorama aktiv Leads erfassen, intern sortieren und Inhalte selbst pflegen möchte.",
-        timeline: "ca. 2 bis 4 Wochen",
+        timeline: "ca. 4 bis 6 Wochen",
         featured: true,
         sections: [
           {
@@ -124,12 +124,12 @@ const panoramaSalesOffer = {
         name: "Paket 3",
         headline: "Operations, Rollen, Tasks und Finanzen",
         subline: "Die operative Plattform für Office, Betriebsleitung, Küche, Service und Geschäftsführung.",
-        price: "ab 9.900 €",
+        price: "ab 6.900 €",
         priceNote: "einmalig, modular erweiterbar",
         summary:
           "Dieses Paket verbindet CRM und Auftragsannahme mit interner Teamsteuerung, Rollenlogik und einer operativen Finanzsicht pro Auftrag.",
         fit: "Ideal, wenn Panorama interne Abläufe, Mitarbeitersteuerung und Kostenkontrolle digital abbilden möchte.",
-        timeline: "ca. 4 bis 8 Wochen",
+        timeline: "ca. 8 bis 12 Wochen",
         featured: false,
         sections: [
           {
@@ -168,12 +168,12 @@ const panoramaSalesOffer = {
         name: "Paket 4",
         headline: "Kundenportal, PWA und optionale Mobile App",
         subline: "Die Ausbaustufe für Bestandskunden, wiederkehrende Bestellungen und mobile Nutzung.",
-        price: "ab 16.900 €",
+        price: "ab 11.900 €",
         priceNote: "je nach Portal- und App-Umfang",
         summary:
           "Dieses Paket erweitert die Plattform um ein Kundenportal, installierbare PWA-Funktionen und auf Wunsch eine echte Mobile-App für Kunden oder Mitarbeitende.",
         fit: "Ideal für wiederkehrende B2B-Kunden, mobile Teams und langfristige Plattformlogik.",
-        timeline: "ca. 6 bis 12 Wochen",
+        timeline: "ca. 12 bis 16 Wochen",
         featured: false,
         sections: [
           {
